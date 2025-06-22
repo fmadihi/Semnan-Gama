@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sajad cheriki - Fatemeh Madihi - Fatemeh Khandan">
+    <title>تماس با ما</title>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body>
+    <!-- S_header -->
+    <header>
+      <div
+        class="grayBck"
+        style="
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.625);
+          position: fixed;
+          z-index: 999;
+          display: none;
+        "
+      ></div>
+      <div class="wrapper">
+        <div class="tHeader">
+          <div class="grad"></div>
+          <div id="LogoSemnan">
+            <div id="img_Logo_Semnan">
+              <img src="../image/LogoSemnan.svg" alt="" />
+            </div>
+          </div>
+          <div class="nav">
+            <ul class="nav_menu">
+              <div class="closeGre" style="display: none">
+                <img
+                  src="../image/close_g.svg"
+                  alt=""
+                  class="closeGreIcon"
+                /><span>گروه آموزشی گاما</span>
+              </div>
+              <li class="nav_item"><a href="../index.html">صفحه اصلی</a></li>
+              <li class="nav_item"><a href="https://my.gama-training.com/login">آموزشگاه من</a></li>
+              <li class="nav_item"><a href="./courses.html">دوره ها</a></li>
+              <li class="nav_item">
+                <a href="./cooperateUs.html">همکاری با ما</a>
+              </li>
+              <li class="nav_item"><a href="./AboutUs.html">درباره ما</a></li>
+              <!-- <li class="nav_item"><a href="">تماس با ما</a></li> -->
+              <div class="downIMG" style="display: none">
+                <img src="../image/down_menu_pic.svg" alt="" />
+              </div>
+            </ul>
+          </div>
+          <div id="Logo">
+            <div id="LogoText">گروه آموزشی گاما</div>
+            <div id="img_Logo">
+              <img src="../image/Logo.svg" alt="" />
+            </div>
+            <div class="menuCellphone" style="display: none">
+              <img src="../image/menu.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bHeader">
+          <div class="smartPhone">
+            <img src="../image/contact/Smartphone.svg" alt="" />
+          </div>
+          <div class="rightSmartPhone">
+            <h2>تماس با ما</h2>
+            <div>
+              اگر سوالی دارید یا نیاز به مشاوره دارید، تیم پشتیبانی مجموعه گاما
+              آماده پاسخگویی به شماست.<br />
+              می‌توانید از طریق شماره تماس یا موقعیت دفتر مرکزی با ما در ارتباط
+              باشید
+            </div>
+            <div>
+              <img src="../image/contact/maps.svg" alt="" />
+              <b>آدرس: </b>میدان مشاهیر خیابان قدس نهم تقاطع شیخ فضال الله نوری
+              پلاک 45 موسسه آموزشی گاما نماینده مجتمع فنی تهران
+            </div>
+            <div class="phone">
+              <img src="../image/contact/phone.svg" alt="" />
+              <b>شماره تماس: </b>8-33441455
+              <div class="ContactSocialMedia">
+                <img src="../image/footer/telegram.svg" alt="" />
+                <img src="../image/footer/linkedin-logo 1.svg" alt="" />
+                <img src="../image/footer/facebook.svg" alt="" />
+                <img src="../image/footer/instagram.svg" alt="" />
+              </div>
+            </div>
+            <br />
+
+            <div>
+              همچنین از طریق فرم در همین صفحه می‌تونید پیام‌تون رو مستقیماً برای
+              ما ارسال کنید.<br />
+              ما در سریع‌ترین زمان ممکن پاسخ‌گو خواهیم بود.
+              <br />
+              <br />
+              <b>با گاما، همیشه در دسترس شما هستیم.</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E_header -->
+    <!-- S_comment -->
+    <div id="Comment">
+      <div class="comment">
+        <div class="leftImage">
+          <!-- <img src="./image/comment.svg" alt="" /> -->
+        </div>
+        <div class="commnetForm">
+          <form action="">
+            <div>نظرات و پیشنهادات</div>
+            <div>
+              <input
+                id="FullName"
+                type="text"
+                name="fullname"
+                value=""
+                placeholder="نام و نام خانوادگی:"
+              />
+              <input
+                id="PhoneNum"
+                type="text"
+                name="phoneNum"
+                value=""
+                placeholder="شماره تماس:"
+              />
+            </div>
+            <textarea
+              name="comment"
+              id="CommentID"
+              cols="30"
+              rows="10"
+              placeholder="ثبت نظرات شما:"
+            ></textarea>
+            <input type="button" name="" value="ثبت" id="send" />
+          </form>
+        </div>
+        <div class="rightImage">
+          <!-- <img src="./image/comment.svg" alt="" /> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- E_comment -->
+    <script src="../api/baseUrl.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+      const numberInput = document.getElementById("PhoneNum");
+
+      numberInput.addEventListener("keydown", function (e) {
+        if (
+          !(
+            (e.key >= "0" && e.key <= "9") || // عدد
+            ["Backspace", "ArrowLeft", "ArrowRight", "Tab"].includes(e.key)
+          )
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+    <script src="../api/postComment.js"></script>
+    <script src="../main.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3787 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: VazirFDWOL;
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2");
+}
+@font-face {
+  font-family: VazirMatn;
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
+}
+
+.nav_item:hover {
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+}
+.nav_item {
+  transition: all 200ms linear;
+}
+.two>div{
+  direction: rtl;
+  font-family: VazirMatn;
+  line-height: 55px;
+  text-indent: 13px;
+}
+/* Footer Part */
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 30px;
+  }
+  #LogoText {
+    /* width: 180px; */
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 15px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 30px;
+  }
+  .bHeader {
+    width: 100%;
+    height: 50px;
+    background-image: url(../image/lesson/hedear.png);
+    background-repeat: repeat-x;
+    background-position: top center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .History {
+    font-weight: 400;
+    font-size: 32px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    /* right: 70px; */
+    margin-top: 95px;
+  }
+  .dream {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    /* column-gap: 50px; */
+  }
+  .course_img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Box {
+    width: 350px;
+    height: 376px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    margin-left: 25px;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Box div.pic img {
+    position: relative;
+    /* top: 30px; */
+  }
+  .off {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+  }
+  .info {
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 10px; */
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .info_title02 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00000099;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  .start_lessen {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .star {
+    position: relative;
+  }
+
+  .star_rate {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .start_time_title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .start_time_show {
+    width: 432px;
+    height: 45px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    margin-top: 15px;
+  }
+
+  .course_description {
+    position: relative;
+  }
+  .course_description_txt {
+    width: 68%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    color: #292a2a;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .age {
+    margin-top: 50px;
+    width: 100%;
+    height: 56px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+  }
+
+  .courses_data {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .courses_data_title {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_data_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .courses_data_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .courses_data_content > div > div {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    width: 246px;
+    height: 67px;
+    background-color: #9ac817;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 67px;
+    margin-top: 15px;
+  }
+  .courses_season {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses_season_title {
+    width: 100%;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_season > div {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seseanOne,
+  .seseanTwo,
+  .seseanThree {
+    width: 95%;
+    height: 268px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one {
+    width: 90px;
+    height: 268px;
+    background-color: #c3b3f1;
+    border-radius: 0 8px 8px 0px;
+    color: #000000;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 230px;
+  }
+  .one > div {
+    transform: rotate(90deg);
+  }
+  .two {
+    width: 100%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .two > div {
+    width: 90%;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .seseanOneExam,
+  .seseanTwoExam,
+  .seseanThreeExam {
+    width: 95%;
+    height: 50px;
+    background-color: #af92ee;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    line-height: 50px;
+  }
+  .limit_time {
+    width: 90%;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  #Comment {
+    width: 100%;
+    height: 223px;
+    background-color: #f3f3f3;
+    margin-bottom: 50px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 250px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+  .leftImage img,
+  .rightImage img {
+    width: 80%;
+  }
+
+  .commnetForm {
+    width: 930px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 32px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 50px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder{
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .diffrentCource{
+    width: 100%;
+    height: 390px;
+    background-color: #B9EF20;
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+  }
+  .diffrentCource>div:nth-of-type(1){
+    font-size: 26px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .courses{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .courses>div{
+    width: 120px;
+    height: 202px;
+    border-radius: 8px;
+    background-color: #9AC817;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: 0px dashed #000000;
+    outline-offset: 0px;
+    transition: all 70ms linear;
+  }
+  .courses>div:hover{
+    outline: 2px dashed #000000;
+
+  }
+  .courses>div>div{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .diffrentCource>div:nth-of-type(3){
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .diffrentCource>div:nth-of-type(3)>a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .diffrentCource>div:nth-of-type(3)>a>span{
+    position: relative;
+    top: -12px;
+  }
+  /*footer*/
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 50px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 28%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 20%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 10px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 5px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 10px;
+  }
+  .bHeader {
+    width: 100%;
+    height: 50px;
+    background-image: url(../image/lesson/hedear.png);
+    background-repeat: repeat-x;
+    background-position: top center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .History {
+    font-weight: 400;
+    font-size: 28px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    /* right: 70px; */
+    margin-top: 95px;
+  }
+  .dream {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    /* column-gap: 50px; */
+  }
+  .course_img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Box {
+    width: 260px;
+    height: 332px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    margin-left: 25px;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Box div.pic img {
+    position: relative;
+    /* top: 30px; */
+  }
+  .off {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    transform: scale(0.8);
+  }
+  .info {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 10px; */
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .info_title02 {
+    font-weight: 400;
+    font-size: 13px;
+    color: #00000099;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  .start_lessen {
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .star {
+    position: relative;
+  }
+
+  .star_rate {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .start_time_title {
+    font-weight: 400;
+    font-size: 17px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .start_time_show {
+    width: 330px;
+    height: 45px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    margin-top: 15px;
+  }
+
+  .course_description {
+    position: relative;
+    transform: scale(0.9);
+  }
+  .course_description_txt {
+    width: 68%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    color: #292a2a;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .age {
+    margin-top: 50px;
+    width: 100%;
+    height: 56px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+  }
+
+  .courses_data {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .courses_data_title {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_data_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .courses_data_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .courses_data_content > div > div {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    width: 210px;
+    height: 50px;
+    background-color: #9ac817;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 15px;
+  }
+  .courses_season {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses_season_title {
+    width: 100%;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    margin-bottom: 15px;
+  }
+  .courses_season > div {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seseanOne,
+  .seseanTwo,
+  .seseanThree {
+    width: 95%;
+    height: 268px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one {
+    width: 70px;
+    height: 268px;
+    background-color: #c3b3f1;
+    border-radius: 0 8px 8px 0px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 230px;
+    position: relative;
+  }
+  .one > div {
+    width: 88px;
+    height: 30px;
+    transform: rotate(90deg);
+    line-height: 5px;
+    position: absolute;
+    top: 110px;
+    left: -20px;
+  }
+  .two {
+    width: 100%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .two > div {
+    width: 90%;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .seseanOneExam,
+  .seseanTwoExam,
+  .seseanThreeExam {
+    width: 95%;
+    height: 50px;
+    background-color: #af92ee;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    line-height: 50px;
+  }
+  .limit_time {
+    width: 90%;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  #Comment {
+    width: 100%;
+    height: 223px;
+    background-color: #f3f3f3;
+    margin-bottom: 50px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 200px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 800px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 28px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 40px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder{
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .diffrentCource {
+    width: 100%;
+    height: 390px;
+    background-color: #b9ef20;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .diffrentCource > div:nth-of-type(1) {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .courses {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .courses > div {
+    width: 120px;
+    height: 202px;
+    border-radius: 8px;
+    background-color: #9ac817;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: scale(0.9);
+    outline: 0px dashed #000000;
+    outline-offset: 0px;
+    transition: all 70ms linear;
+  }
+  .courses>div:hover{
+    outline: 2px dashed #000000;
+
+  }
+  .courses > div > div {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .diffrentCource > div:nth-of-type(3) {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .diffrentCource > div:nth-of-type(3) > a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .diffrentCource > div:nth-of-type(3) > a > span {
+    position: relative;
+    top: -12px;
+  }
+
+  /*footer*/
+
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 25%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 990px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    background-image: url(../image/lesson/hedear.png);
+    background-repeat: repeat-x;
+    background-position: top center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .History {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    /* right: 70px; */
+    margin-top: 75px;
+  }
+  .dream {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    /* column-gap: 50px; */
+  }
+  .course_img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+  .Box {
+    width: 190px;
+    height: 240px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    margin-left: 15px;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6);
+  }
+  .Box div.pic img {
+    position: relative;
+    /* top: 30px; */
+  }
+  .off {
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    transform: scale(0.5);
+  }
+  .info {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 10px; */
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 19px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .info_title02 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #00000099;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  .start_lessen {
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .star {
+    position: relative;
+  }
+  .star img {
+    transform: scale(0.8);
+  }
+  .star_rate {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .start_time_title {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .start_time_show {
+    width: 150px;
+    height: 30px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    margin-top: 15px;
+  }
+
+  .course_description {
+    position: relative;
+    width: 250px;
+    text-align: center;
+  }
+  .course_description img {
+    width: 250px;
+  }
+  .course_description_txt {
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #292a2a;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .age {
+    margin-top: 50px;
+    width: 100%;
+    height: 56px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:-50px;
+  }
+
+  .courses_data {
+    width: 100%;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .courses_data_title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_data_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    row-gap: 30px;
+  }
+  .courses_data_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:48%;
+  }
+  .courses_data_content > div > div {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    width: 220px;
+    height: 40px;
+    background-color: #9ac817;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+  .courses_season {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .courses_season_title {
+    width: 100%;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .partOne,.partTwo,.partThree {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seseanOne,
+  .seseanTwo,
+  .seseanThree {
+    width: 95%;
+    height: 268px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one {
+    width:35px;
+    height: 268px;
+    background-color: #c3b3f1;
+    border-radius: 0 8px 8px 0px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+    text-align: center;
+    /* line-height: 230px; */
+    position: relative;
+    box-sizing: border-box;;
+  }
+  .one > div {
+     width: 89px;
+    height: 3px; 
+    position: absolute;
+    transform: rotate(90deg);
+    top: 130px;
+    right:-25px;
+    line-height: 0px;
+    box-sizing: border-box;;
+
+  }
+  .two {
+    width: 95%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .two > div {
+    width: 90%;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .seseanOneExam,
+  .seseanTwoExam,
+  .seseanThreeExam {
+    width: 95%;
+    height: 50px;
+    background-color: #af92ee;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    line-height: 50px;
+  }
+  .limit_time {
+    width: 80%;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  #Comment {
+    width: 97%;
+    height: 223px;
+    background-color: #f3f3f3;
+    margin-bottom: 50px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 175px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 700px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 28px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 40px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder{
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .diffrentCource {
+    width: 100%;
+    height: 390px;
+    background-color: #b9ef20;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .diffrentCource > div:nth-of-type(1) {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .courses {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .courses > div {
+    width: 100px;
+    height: 202px;
+    border-radius: 8px;
+    background-color: #9ac817;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: scale(0.9);
+    outline: 0px dashed #000000;
+    outline-offset: 0px;
+    transition: all 70ms linear;
+  }
+  .courses>div:hover{
+    outline: 2px dashed #000000;
+
+  }
+  .courses > div > img {
+    transform: scale(0.6);
+  }
+  .courses > div > div {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .diffrentCource > div:nth-of-type(3) {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .diffrentCource > div:nth-of-type(3) > a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .diffrentCource > div:nth-of-type(3) > a > span {
+    position: relative;
+    top: -12px;
+  }
+  .hide {
+    display: none !important;
+  }
+  /*footer*/
+
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+  }
+  .about {
+    width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 45%;
+    margin-top: 50px;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+@media (min-width: 560px) and (max-width: 699px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    /* height: 800px; */
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    width: 90%;
+    gap: 10px;
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    background-image: url(../image/lesson/hedear.png);
+    background-repeat: repeat-x;
+    background-position: top center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .History {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    /* right: 70px; */
+    margin-top: 75px;
+  }
+  .dream {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 15px;
+    /* column-gap: 50px; */
+  }
+  .course_img {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+  .Box {
+    width: 190px;
+    height: 240px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    margin-left: 15px;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6);
+  }
+  .Box div.pic img {
+    position: relative;
+    /* top: 30px; */
+  }
+  .off {
+    position: absolute;
+    top: -40px;
+    right: -15px;
+    transform: scale(0.5);
+  }
+  .info {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 10px; */
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 19px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .info_title02 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #00000099;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  .start_lessen {
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .star {
+    position: relative;
+  }
+  .star img {
+    transform: scale(0.8);
+  }
+  .star_rate {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .start_time_title {
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .start_time_show {
+    width: 150px;
+    height: 30px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    margin-top: 15px;
+  }
+
+  .course_description {
+    position: relative;
+    width: 250px;
+    text-align: center;
+  }
+  .course_description img {
+    width: 250px;
+  }
+  .course_description_txt {
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #292a2a;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .age {
+    margin-top: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:-50px;
+  }
+
+  .courses_data {
+    width: 100%;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .courses_data_title {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_data_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    row-gap: 30px;
+  }
+  .courses_data_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:48%;
+  }
+  .courses_data_content > div > div {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    width: 220px;
+    height: 40px;
+    background-color: #9ac817;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+  .courses_season {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .courses_season_title {
+    width: 100%;
+    color: #000000;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .partOne,.partTwo,.partThree {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seseanOne,
+  .seseanTwo,
+  .seseanThree {
+    width: 95%;
+    height: 268px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one {
+    width:35px;
+    height: 268px;
+    background-color: #c3b3f1;
+    border-radius: 0 8px 8px 0px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+    text-align: center;
+    /* line-height: 230px; */
+    position: relative;
+    box-sizing: border-box;;
+  }
+  .one > div {
+     width: 89px;
+    height: 3px; 
+    position: absolute;
+    transform: rotate(90deg);
+    top: 130px;
+    right:-25px;
+    line-height: 0px;
+    box-sizing: border-box;;
+  }
+  .two {
+    width: 95%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .two > div {
+    width: 90%;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  .seseanOneExam,
+  .seseanTwoExam,
+  .seseanThreeExam {
+    width: 95%;
+    height: 40px;
+    background-color: #af92ee;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    line-height: 40px;
+  }
+  .limit_time {
+    width: 80%;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #Comment {
+    width: 97%;
+    height: 223px;
+    background-color: #f3f3f3;
+    margin-bottom: 30px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 175px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 700px;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 35px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder{
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+  .diffrentCource {
+    width: 100%;
+    height: 390px;
+    background-color: #b9ef20;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .diffrentCource > div:nth-of-type(1) {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .courses {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .courses > div {
+    width: 100px;
+    height: 202px;
+    border-radius: 8px;
+    background-color: #9ac817;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: scale(0.9);
+    outline: 0px dashed #000000;
+    outline-offset: 0px;
+    transition: all 70ms linear;
+  }
+  .courses>div:hover{
+    outline: 2px dashed #000000;
+
+  }
+  .courses > div > img {
+    transform: scale(0.6);
+  }
+  .courses > div > div {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .diffrentCource > div:nth-of-type(3) {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .diffrentCource > div:nth-of-type(3) > a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .diffrentCource > div:nth-of-type(3) > a > span {
+    position: relative;
+    top: -12px;
+  }
+  .hide {
+    display: none !important;
+  }
+  /*footer*/
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 50px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 50px;
+    gap: 35px;
+  }
+  .about {
+    width: 92%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    /* left: 35px; */
+    margin-top: 20px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 85%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+ body {
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+    overflow-x: hidden !important;
+  }
+
+  header {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    width: 70%;
+    position: relative;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  #LogoText {
+    width: 70%;
+    font-weight: 400;
+    font-size:17px;
+    white-space: nowrap;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: left;
+    align-self: center;
+  }
+  #img_Logo > img {
+    width: 50px;
+  }
+  .menuCellphone{
+    display: inline-block !important;
+    position: relative;
+    top: 0px;
+    right:0px;
+  }
+  .menuCellphone img{
+    width: 20px;
+  }
+  .nav {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    z-index: 998;
+    display: none;
+    /* display: none; */
+  }
+  .nav_menu {
+    width: 271px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius:24px;
+    height: 100vh;
+    /* width: 90%; */
+    gap: 18px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .nav_menu .closeGre{
+    display: block !important;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .nav_menu .closeGre span{
+    color: #9AC817;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    margin-left: 15px;
+  }
+  .nav_menu .closeGre img{
+    position: relative;
+    right: 15px;
+    top: 4px;
+  }
+  .nav_menu > li {
+    width: 150px;
+    text-align: right;
+  }
+  .nav_menu > li > a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #1B198F;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  .downIMG{
+    display: block !important;
+        position: absolute;
+    bottom: 10px;
+    width: 250px;
+  }
+  #LogoSemnan{
+    width: 24%;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    width: 65px;
+  }
+
+  .bHeader {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .History {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    right: 18px;
+    margin-top: 20px;
+  }
+  .dream {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin-top: 15px;
+    /* column-gap: 50px; */
+  }
+  .course_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .Box {
+    width: 190px;
+    height: 240px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+    margin-left: 15px;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.6);
+  }
+  .Box div.pic img {
+    position: relative;
+    /* top: 30px; */
+  }
+  .off {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    transform: scale(0.5);
+  }
+  .Boxstar{
+    display: block !important;
+    position: absolute !important;
+    top: -25px !important;
+    left: -15px !important;
+  }
+  .info {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+    /* gap: 10px; */
+  }
+  .info_title {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .info_title02 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #00000099;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  .start_lessen {
+    font-weight: 600;
+    font-size: 12px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    top: 360px;
+  }
+  .star {
+    position: relative;
+    display: none;
+  }
+  .star img {
+    transform: scale(0.8);
+  }
+  .star_rate {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .start_time_title {
+    font-weight: 400;
+    font-size: 11px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    top: 360px;
+  }
+  .start_time_show {
+    width: 150px;
+    height: 30px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    margin-top: 15px;
+     position: relative;
+    top: 360px;
+  }
+
+  .course_description {
+    position: relative;
+    top: -120px;
+    width: 90%;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 15px;
+  }
+  .leftYellow,.rightYellow{
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    top: 12px;
+    background-color: #e7ff34;
+  }
+  .leftYellow{
+    transform: rotate(-45deg);
+    left: -20px;
+  }
+  .rightYellow{
+    transform: rotate(45deg);
+    right: -18px;
+  }
+  .course_description img {
+    width: 250px;
+    visibility: hidden;
+  }
+  .course_description_txt {
+    width: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #292a2a;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+  .age {
+    margin-top: 0px;
+    width: 100%;
+    height: 56px;
+    background-color: #ebebeb;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #000000;
+    font-family: VazirFDWOL;
+    direction: rtl;
+  }
+
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+  }
+
+  .courses_data {
+    width: 100%;
+    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .courses_data_title {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  .courses_data_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+    row-gap: 30px;
+  }
+  .courses_data_content>div>img{
+    width: 55px;
+  }
+  .courses_data_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:48%;
+  }
+  .courses_data_content > div > div {
+    color: #000000;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    width: 99%;
+    height: 40px;
+    background-color: #9ac817;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 15px;
+  }
+  .courses_season {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .courses_season_title {
+    width: 100%;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .partOne,.partTwo,.partThree {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seseanOne,
+  .seseanTwo,
+  .seseanThree {
+    width: 95%;
+    height: 268px;
+    background-color: #f3edff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .one {
+    width:35px;
+    height: 268px;
+    background-color: #c3b3f1;
+    border-radius: 0 8px 8px 0px;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+    text-align: center;
+    /* line-height: 230px; */
+    position: relative;
+    box-sizing: border-box;;
+  }
+  .one > div {
+     width: 89px;
+    height: 3px; 
+    position: absolute;
+    transform: rotate(90deg);
+    top: 130px;
+    right:-25px;
+    line-height: 0px;
+    box-sizing: border-box;;
+  }
+  .two {
+    width: 95%;
+    height: 268px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .two > div {
+    width: 90%;
+    min-height: 60px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  .seseanOneExam,
+  .seseanTwoExam,
+  .seseanThreeExam {
+    width: 95%;
+    height: 40px;
+    background-color: #af92ee;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    line-height: 40px;
+  }
+  .limit_time {
+    width: 80%;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #Comment {
+    width: 100%;
+    height: 223px;
+    background-color: #f3f3f3;
+    margin-bottom: 30px;
+  }
+
+  .comment {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 100px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width:90%;
+    height: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 14px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 100%;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 35px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder{
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+
+   .diffrentCource{
+    width: 100%;
+    height:110px;
+    background-color: #B9EF20;
+margin-top: 10px;
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/* gap: 30px; */
+overflow-x: auto;  /* فعال کردن اسکرول افقی */
+  scroll-snap-type: x mandatory;  /* بهتر شدن رفتار اسکرول */
+  -ms-overflow-style: none;  /* مخفی کردن نوار اسکرول برای IE */
+  scrollbar-width: none;  /* مخفی کردن نوار اسکرول برای Firefox */
+  }
+  .diffrentCource>div:nth-of-type(1){
+    display: none;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .courses{
+    width:100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    gap: 10px;
+  }
+  /* .courses::-webkit-scrollbar {
+    display: none;  /* مخفی کردن نوار اسکرول */
+  /*} */
+  .courses>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: scale(0.9);
+    outline: 0px dashed #000000;
+    outline-offset: 0px;
+    transition: all 70ms linear;
+    flex-shrink: 0;
+  }
+  .courses>div:hover{
+    outline: 2px dashed #000000;
+
+  }
+  .courses>div>img{
+    width: 55px;
+    height: 55px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .courses>div>div{
+    width: 100%;
+    font-size: 9px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .diffrentCource>div:nth-of-type(3){
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  .diffrentCource>div:nth-of-type(3)>a{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+  }
+  .diffrentCource>div:nth-of-type(3)>a>span{
+    position: relative;
+    top: -12px;
+  }
+.hide02{
+  display: none !important;
+}
+
+   /*S_footer*/
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 15px;
+    gap: 10px;
+     position: relative;
+  }
+  .about {
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+   
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3{
+    display: none;
+  }
+  .aboutPara > p,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 12px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+  }
+
+  .socailMedia {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .socailMedia>a>img{
+    width: 27px;
+  }
+  .socailMedia>a:nth-of-type(4)>img{
+    width: 34px;
+  }
+  .accesibility {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+   .accesibility h3{
+    display: none;
+   }
+  .accesibility ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    right: 15px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    color: #1B198F;
+  }
+  .Addresss {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+   .Addresss > h3{
+    width: 95%;
+    text-align: right;
+    font-weight: 700;
+
+   }
+  .Addresss > div {
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .Addresss > div > div {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    text-align: right;
+  }
+  .NumAddresss{
+    width: 100%;
+    align-self: start;
+    text-align: right !important;
+  }
+  .mapPic {
+    width: 100%;
+  }
+  .mapPic > img {
+    width: 50%;
+  }
+  /*E_footer*/
+}

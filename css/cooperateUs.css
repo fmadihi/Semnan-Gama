@@ -1,0 +1,2274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: VazirFDWOL;
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2");
+}
+@font-face {
+  font-family: VazirMatn;
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
+}
+.nav_item:hover {
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+}
+.nav_item {
+  transition: all 200ms linear;
+}
+
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 30px;
+  }
+  #LogoText {
+    /* width: 180px; */
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 15px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 30px;
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .grad {
+    width: 100%;
+    height: 600px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  /*add btns*/
+.btns {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  right: 50px;
+}
+.btns > div {
+  font-family: VazirFDWOL;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b198f5c;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.activeLoad {
+  border-bottom: 6px solid #1b198f;
+  color: #1b198f;
+}
+
+  .showseccessbox {
+    font-weight: 700;
+    font-size: 14px;
+    color: #9ac817;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    right: 70px;
+    top: 15px;
+  }
+  .cooperateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+  }
+
+  .rigthBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    direction: rtl;
+  }
+  .rigthBox > div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > div:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > form {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7px;
+    column-gap: 15px;
+  }
+  form input[type="text"] {
+    width: 314px;
+    height: 44px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  form > div:nth-of-type(2) {
+    display: flex;
+    gap: 4px;
+  }
+
+  form textarea {
+    width: 635px;
+    height: 100px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+  }
+  form > div > button {
+    width: 110px;
+    height: 35px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 314px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 160px; */
+    width: 314px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    border-radius: 5px;
+  }
+
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+  }
+  .dropdown-content label input {
+    position: absolute;
+    left: 25px;
+  }
+  /* مخفی کردن چک‌باکس پیش‌فرض */
+  .dropdown-content input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  /* حالت checked با تیک سبز */
+  .dropdown-content input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(25, 190, 25);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown-content label:hover {
+    background-color: #ddd;
+  }
+
+  .selected-options {
+    position: relative;
+    line-height: 44px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #4c4c4c;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 5px;
+  }
+  .selected-options img {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+  }
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 28%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 20%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 10px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 5px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 10px;
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .grad {
+    width: 100%;
+    height: 600px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  /*add btns*/
+.btns {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  right: 50px;
+}
+.btns > div {
+  font-family: VazirFDWOL;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b198f5c;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.activeLoad {
+  border-bottom: 6px solid #1b198f;
+  color: #1b198f;
+}
+
+  .showseccessbox {
+    font-weight: 700;
+    font-size: 14px;
+    color: #9ac817;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    right: 70px;
+    top: 15px;
+  }
+  .cooperateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+  }
+
+  .rigthBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    direction: rtl;
+  }
+  .rigthBox > div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > div:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > form {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7px;
+    column-gap: 15px;
+  }
+  form input[type="text"] {
+    width: 314px;
+    height: 44px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  form input::placeholder form textarea::placeholder {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  form > div:nth-of-type(2) {
+    display: flex;
+    gap: 4px;
+  }
+
+  form textarea {
+    width: 635px;
+    height: 100px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+  }
+  form > div > button {
+    width: 110px;
+    height: 35px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 314px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 160px; */
+    width: 314px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    border-radius: 5px;
+  }
+
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+  }
+  .dropdown-content label input {
+    position: absolute;
+    left: 25px;
+  }
+  /* مخفی کردن چک‌باکس پیش‌فرض */
+  .dropdown-content input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  /* حالت checked با تیک سبز */
+  .dropdown-content input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(25, 190, 25);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown-content label:hover {
+    background-color: #ddd;
+  }
+
+  .selected-options {
+    position: relative;
+    line-height: 44px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #4c4c4c;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 5px;
+  }
+  .selected-options img {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+  }
+
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 25%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 992px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .grad {
+    width: 100%;
+    height: 600px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  /*add btns*/
+.btns {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  right: 25px;
+}
+.btns > div {
+  font-family: VazirFDWOL;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1b198f5c;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.activeLoad {
+  border-bottom: 6px solid #1b198f;
+  color: #1b198f;
+}
+
+  .showseccessbox {
+    font-weight: 700;
+    font-size: 14px;
+    color: #9ac817;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    right: 40px;
+    top: 15px;
+  }
+  .cooperateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px;
+  }
+  .leftBox > img {
+    transform: scale(0.5);
+  }
+  .rigthBox {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    direction: rtl;
+    padding-right: 30px;
+  }
+  .rigthBox > div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > div:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 7px;
+    column-gap: 15px;
+  }
+  form > div {
+    width: 100%;
+  }
+  form input[type="text"] {
+    width: 49%;
+    height: 35px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  form input::placeholder form textarea::placeholder {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  form > div:nth-of-type(2) {
+    display: flex;
+    gap: 4px;
+  }
+
+  form textarea {
+    width: 100%;
+    height: 100px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+  }
+  .btnCooper {
+    text-align: center;
+  }
+  form > div > button {
+    width: 110px;
+    height: 35px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-top: 35px;
+    margin-left: 15px;
+  }
+
+  .dropdown {
+    position: relative;
+    width: 49%;
+    /* height: 44px !important; */
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 160px; */
+    width: 104%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    border-radius: 5px;
+  }
+
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+  }
+  .dropdown-content label input {
+    position: absolute;
+    left: 25px;
+  }
+  /* مخفی کردن چک‌باکس پیش‌فرض */
+  .dropdown-content input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  /* حالت checked با تیک سبز */
+  .dropdown-content input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(25, 190, 25);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown-content label:hover {
+    background-color: #ddd;
+  }
+
+  .selected-options {
+    height: 32px !important;
+    position: relative;
+    line-height: 32px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #4c4c4c;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 5px;
+  }
+  .selected-options img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+  }
+  .about {
+    width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 45%;
+    margin-top: 50px;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+@media (min-width: 560px) and (max-width: 700px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    /* height: 800px; */
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    width: 90%;
+    gap: 10px;
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .grad {
+    width: 100%;
+    height: 810px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  /*add btns*/
+.btns {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 7px;
+  position: relative;
+  /* right: 50px; */
+}
+.btns > div {
+  font-family: VazirFDWOL;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1b198f5c;
+  width: 130px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.activeLoad {
+  border-bottom:3px solid #1b198f;
+  color: #1b198f;
+}
+
+  .showseccessbox {
+    width: 80%;
+    font-weight: 700;
+    font-size: 12px;
+    color: #9ac817;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    /* right: 70px; */
+    top: 15px;
+  }
+  .cooperateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+  }
+  .leftBox > img {
+    transform: scale(0.8);
+  }
+  .rigthBox {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    direction: rtl;
+  }
+  .rigthBox > div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > div:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+  }
+  .rigthBox > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 7px;
+    column-gap: 15px;
+  }
+  form > div {
+    width: 100%;
+  }
+  form input[type="text"] {
+    width: 49%;
+    height: 35px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  form input::placeholder form textarea::placeholder {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  form > div:nth-of-type(2) {
+    display: flex;
+    gap: 4px;
+  }
+
+  form textarea {
+    width: 100%;
+    height: 100px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+  }
+  .btnCooper {
+    text-align: center;
+  }
+  form > div > button {
+    width: 110px;
+    height: 35px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-top: 35px;
+    margin-left: 15px;
+  }
+  .dropdown {
+    position: relative;
+    width: 49%;
+    /* height: 44px !important; */
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 160px; */
+    width: 104%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    left: 10px;
+    top: 2px;
+    border-radius: 5px;
+  }
+
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+  }
+  .dropdown-content label input {
+    position: absolute;
+    left: 25px;
+  }
+  /* مخفی کردن چک‌باکس پیش‌فرض */
+  .dropdown-content input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  /* حالت checked با تیک سبز */
+  .dropdown-content input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(25, 190, 25);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown-content label:hover {
+    background-color: #ddd;
+  }
+
+  .selected-options {
+    height: 32px !important;
+    position: relative;
+    line-height: 32px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #4c4c4c;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 5px;
+  }
+  .selected-options img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 50px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 50px;
+    gap: 35px;
+  }
+  .about {
+    width: 92%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    /* left: 35px; */
+    margin-top: 20px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 85%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+  }
+
+  header {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    width: 70%;
+    position: relative;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  #LogoText {
+    width: 70%;
+    font-weight: 400;
+    font-size:17px;
+    white-space: nowrap;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: left;
+    align-self: center;
+  }
+  #img_Logo > img {
+    width: 50px;
+  }
+  .menuCellphone{
+    display: inline-block !important;
+    position: relative;
+    top: 0px;
+    right:0px;
+  }
+  .menuCellphone img{
+    width: 20px;
+  }
+  .nav {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    z-index:999;
+    display: none;
+    /* display: none; */
+  }
+  .nav_menu {
+    width: 271px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius:24px;
+    height: 100vh;
+    /* width: 90%; */
+    gap: 18px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .nav_menu .closeGre{
+    display: block !important;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .nav_menu .closeGre span{
+    color: #9AC817;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    margin-left: 15px;
+  }
+  .nav_menu .closeGre img{
+    position: relative;
+    right: 15px;
+    top: 4px;
+  }
+  .nav_menu > li {
+    width: 150px;
+    text-align: right;
+  }
+  .nav_menu > li > a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #1B198F;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  .downIMG{
+    display: block !important;
+        position: absolute;
+    bottom: 10px;
+    width: 250px;
+  }
+  #LogoSemnan{
+    width: 24%;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    width: 65px;
+  }
+
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .grad {
+    width: 100%;
+    height: 810px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+  .btns {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  right: 0px !important;
+}
+.btns > div {
+  font-family: VazirFDWOL;
+  font-size: 12px !important;
+  font-weight: 700;
+  color: #1b198f5c;
+  width:110px !important;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.activeLoad {
+  border-bottom: 3px solid #1b198f;
+  color: #1b198f;
+}
+  .showseccessbox {
+    width:95%;
+    font-weight: 700;
+    font-size: 14px;
+    color: #9ac817;
+    font-family: VazirFDWOL;
+    direction: rtl;
+    position: relative;
+    text-align: center;
+    /* right: 70px; */
+    top: 15px;
+  }
+  .cooperateBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+  }
+  .leftBox{
+    position: relative;
+    top:70px;
+  }
+  .leftBox > img {
+    width: 200px;
+  }
+  .rigthBox {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    direction: rtl;
+  }
+  .rigthBox > div:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: VazirFDWOL;
+    position: relative;
+    top: -180px;
+  }
+  .rigthBox > div:nth-of-type(2) {
+    width: 92%;
+    font-weight: 400;
+    font-size:12px;
+    font-family: VazirFDWOL;
+    position: relative;
+    top: 18px;
+    text-align: center;
+  }
+  .rigthBox > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 7px;
+    column-gap: 15px;
+  }
+  form > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  form input[type="text"] {
+    width: 100%;
+    height: 35px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  form input::placeholder form textarea::placeholder {
+    color: #4c4c4c;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  form > div:nth-of-type(2) {
+    display: flex;
+    gap: 7px;
+  }
+
+  form textarea {
+    width: 100%;
+    height: 100px;
+    color: #4c4c4c;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-family: VazirFDWOL;
+    font-size: 10px;
+    font-weight: 400;
+    resize: none;
+  }
+  .btnCooper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  form > div > button {
+    width: 90px;
+    height: 30px;
+    background-color: #1b198f;
+    border-radius: 8px;
+    font-family: VazirFDWOL;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    margin-top:15px;
+    margin-left: 15px;
+  }
+  .dropdown {
+    position: relative;
+    width:100%;
+    /* height: 44px !important; */
+    border: none;
+    border-radius: 8px;
+    padding-right: 8px;
+    font-family: VazirFDWOL;
+    font-size: 9.5px;
+    color: #4c4c4c;
+    font-weight: 100;
+    background-color: #ffffff;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    /* min-width: 160px; */
+    width: 102%;
+    box-shadow: -1px 3px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    position: relative;
+    left:9px;
+    top: 2px;
+    border-radius: 5px;
+  }
+
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+  .dropdown-content label {
+    display: block;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+    font-size: 10px;
+  }
+  .dropdown-content label input {
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    left: 25px;
+  }
+  /* مخفی کردن چک‌باکس پیش‌فرض */
+  .dropdown-content input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  /* حالت checked با تیک سبز */
+  .dropdown-content input[type="checkbox"]:checked::after {
+    content: "✔";
+    color: rgb(25, 190, 25);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .dropdown-content label:hover {
+    background-color: #ddd;
+  }
+
+  .selected-options {
+    height: 32px !important;
+    position: relative;
+    line-height: 32px;
+    min-width: 160px;
+    cursor: pointer;
+    color: #4c4c4c;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 5px;
+  }
+  .selected-options img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  /*S_footer*/
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 15px;
+    gap: 10px;
+     position: relative;
+  }
+  .about {
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+   
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3{
+    display: none;
+  }
+  .aboutPara > p,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 12px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+  }
+
+  .socailMedia {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .socailMedia>a>img{
+    width: 27px;
+  }
+  .socailMedia>a:nth-of-type(4)>img{
+    width: 34px;
+  }
+  .accesibility {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+   .accesibility h3{
+    display: none;
+   }
+  .accesibility ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    right: 15px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    color: #1B198F;
+  }
+  .Addresss {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+   .Addresss > h3{
+    width: 95%;
+    text-align: right;
+    font-weight: 700;
+
+   }
+  .Addresss > div {
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .Addresss > div > div {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    text-align: right;
+  }
+  .NumAddresss{
+    width: 100%;
+    align-self: start;
+    text-align: right !important;
+  }
+  .mapPic {
+    width: 100%;
+  }
+  .mapPic > img {
+    width: 50%;
+  }
+  /*E_footer*/
+}
+.gamaBox{
+  display: flex;
+}
+.humanBox{
+  display: none;
+}
+.showseccessbox{
+  display: none;
+}

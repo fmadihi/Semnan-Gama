@@ -1,0 +1,1622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: VazirFDWOL;
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2");
+}
+@font-face {
+  font-family: VazirMatn;
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
+}
+.nav_item:hover{
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+}
+.nav_item{
+  transition: all 200ms linear;
+}
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 30px;
+  }
+  #LogoText {
+    /* width: 180px; */
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 15px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 30px;
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .grad {
+    width: 630px;
+    height: 800px;
+    background: #ffffff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .smartPhone {
+    position: relative;
+    z-index: 9;
+  }
+  .smartPhone>img{
+      width: 330px;
+      position: relative;
+      top: 10px;
+  }
+  .rightSmartPhone {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    direction: rtl;
+    position: relative;
+    right: 50px;
+    z-index: 9;
+  }
+  .rightSmartPhone > h2 {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    position: relative;
+    top: -20px;
+  }
+  .rightSmartPhone > div {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  /* .rightSmartPhone > div:nth-of-type(2),
+  .rightSmartPhone > div:nth-of-type(3) {
+    position: relative;
+    left: 25px;
+  } */
+  .rightSmartPhone > div > img {
+    width: 21px;
+  }
+  .phone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  .ContactSocialMedia {
+    position: relative;
+    right: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .ContactSocialMedia>img {
+    position: relative;
+    /* top: 4px; */
+    width: 28px;
+  }
+  .ContactSocialMedia>img:nth-of-type(4) {
+    position: relative;
+    /* top: 4px; */
+    width: 35px;
+    left: 2px;
+  }
+  #Comment {
+    padding: 20px 10px;
+    background-color: #f3f3f3;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 340px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+  .leftImage img,
+  .rightImage img {
+    width: 80%;
+  }
+
+  .commnetForm {
+    width: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 32px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 53px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder,
+  .commnetForm > form textarea::placeholder {
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .commnetForm > form textarea {
+    width: 100%;
+    direction: rtl;
+    padding-right: 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    resize: none;
+  }
+
+  .commnetForm > form textarea:focus,
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 35px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 800px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 10px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 5px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 10px;
+  }
+      .bHeader {
+        width: 100%;
+        /* gap: 50px; */
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+      }
+    
+      .grad {
+        width: 630px;
+        height: 800px;
+        background: #ffffff;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(226, 229, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .smartPhone {
+        position: relative;
+        z-index: 9;
+      }
+      .smartPhone>img{
+          width: 330px;
+          position: relative;
+          top: 10px;
+      }
+      .rightSmartPhone {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+        direction: rtl;
+        position: relative;
+        right: 50px;
+        z-index: 9;
+      }
+      .rightSmartPhone > h2 {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: VazirFDWOL;
+        position: relative;
+        top: 0px;
+      }
+      .rightSmartPhone > div {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: VazirFDWOL;
+      }
+      /* .rightSmartPhone > div:nth-of-type(2),
+      .rightSmartPhone > div:nth-of-type(3) {
+        position: relative;
+        left: 25px;
+      } */
+      .rightSmartPhone > div > img {
+        width: 21px;
+      }
+      .phone {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+      .ContactSocialMedia {
+        position: relative;
+        right: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .ContactSocialMedia>img {
+        position: relative;
+        /* top: 4px; */
+        width: 28px;
+      }
+      .ContactSocialMedia>img:nth-of-type(4) {
+        position: relative;
+        /* top: 4px; */
+        width: 35px;
+        left: 2px;
+      }
+  #Comment {
+    padding: 20px 10px;
+    background-color: #f3f3f3;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 250px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 32px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 53px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 53px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder,
+  .commnetForm > form textarea::placeholder {
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .commnetForm > form textarea {
+    width: 100%;
+    direction: rtl;
+    padding-right: 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    resize: none;
+  }
+
+  .commnetForm > form textarea:focus,
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 35px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 992px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 700px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important; 
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+      .bHeader {
+        width: 100%;
+        /* gap: 50px; */
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 30px;
+      }
+    
+      .grad {
+        width: 306px;
+        height: 700px;
+        background: #ffffff;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(226, 229, 255, 1) 50%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .smartPhone {
+        position: relative;
+        z-index: 9;
+      }
+      .smartPhone>img{
+          width: 280px;
+          position: relative;
+          top: 10px;
+      }
+      .rightSmartPhone {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+        direction: rtl;
+        position: relative;
+        right: 5px;
+        z-index: 9;
+      }
+      .rightSmartPhone > h2 {
+        font-size:18px;
+        font-weight: 700;
+        font-family: VazirFDWOL;
+        position: relative;
+        top: 0px;
+      }
+      .rightSmartPhone > div {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: VazirFDWOL;
+      }
+      /* .rightSmartPhone > div:nth-of-type(2),
+      .rightSmartPhone > div:nth-of-type(3) {
+        position: relative;
+        left: 25px;
+      } */
+      .rightSmartPhone > div > img {
+        width: 18px;
+      }
+      .phone {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+      .ContactSocialMedia {
+        position: relative;
+        right: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .ContactSocialMedia>img {
+        position: relative;
+        /* top: 4px; */
+        width: 20px;
+      }
+      .ContactSocialMedia>img:nth-of-type(4) {
+        position: relative;
+        /* top: 4px; */
+        width: 27px;
+        left: 2px;
+      }
+  #Comment {
+    padding: 10px 10px;
+    background-color: #f3f3f3;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 220px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 28px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 40px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    font-size: 12px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder,
+  .commnetForm > form textarea::placeholder {
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .commnetForm > form textarea {
+    width: 100%;
+    direction: rtl;
+    padding-right: 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    resize: none;
+    font-size: 12px;
+  }
+
+  .commnetForm > form textarea:focus,
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 35px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 35px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 560px) and (max-width: 700px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 950px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    width: 90%;
+    gap: 10px;
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+  }
+
+  .grad {
+    width: 100%;
+    height: 950px;
+    background: #ffffff;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(226, 229, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .smartPhone {
+    position: relative;
+    z-index: 9;
+  }
+  .smartPhone>img{
+      width: 280px;
+      position: relative;
+      top: 10px;
+  }
+  .rightSmartPhone {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    direction: rtl;
+    position: relative;
+    right: 25px;
+    z-index: 9;
+  }
+  .rightSmartPhone > h2 {
+    font-size:18px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    position: relative;
+    top: 0px;
+  }
+  .rightSmartPhone > div {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  /* .rightSmartPhone > div:nth-of-type(2),
+  .rightSmartPhone > div:nth-of-type(3) {
+    position: relative;
+    left: 25px;
+  } */
+  .rightSmartPhone > div > img {
+    width: 18px;
+  }
+  .phone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  .ContactSocialMedia {
+    position: relative;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .ContactSocialMedia>img {
+    position: relative;
+    /* top: 4px; */
+    width: 20px;
+  }
+  .ContactSocialMedia>img:nth-of-type(4) {
+    position: relative;
+    /* top: 4px; */
+    width: 27px;
+    left: 2px;
+  }
+  #Comment {
+    padding: 10px 10px;
+    background-color: #f3f3f3;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 200px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 25%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 28px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 50%;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 40px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    font-size: 12px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder,
+  .commnetForm > form textarea::placeholder {
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .commnetForm > form textarea {
+    width: 100%;
+    direction: rtl;
+    padding-right: 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    resize: none;
+    font-size: 12px;
+  }
+
+  .commnetForm > form textarea:focus,
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 117px;
+    height: 35px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 35px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 560px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+  }
+
+  header {
+    width: 100%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    width: 70%;
+    position: relative;
+    right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  #LogoText {
+    width: 70%;
+    font-weight: 400;
+    font-size:17px;
+    white-space: nowrap;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: left;
+    align-self: center;
+  }
+  #img_Logo > img {
+    width: 50px;
+  }
+  .menuCellphone{
+    display: inline-block !important;
+    position: relative;
+    top: 0px;
+    right:0px;
+  }
+  .menuCellphone img{
+    width: 20px;
+  }
+  .nav {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    position: fixed;
+    z-index: 9;
+    display: none;
+    /* display: none; */
+    z-index: 999;
+
+  }
+  .nav_menu {
+    width: 271px;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius:24px;
+    height: 100vh;
+    /* width: 90%; */
+    gap: 18px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 999;
+  }
+  .nav_menu .closeGre{
+    display: block !important;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .nav_menu .closeGre span{
+    color: #9AC817;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    margin-left: 15px;
+  }
+  .nav_menu .closeGre img{
+    position: relative;
+    right: 15px;
+    top: 4px;
+  }
+  .nav_menu > li {
+    width: 150px;
+    text-align: right;
+  }
+  .nav_menu > li > a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #1B198F;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  .downIMG{
+    display: block !important;
+        position: absolute;
+    bottom: 10px;
+    width: 250px;
+  }
+  #LogoSemnan{
+    width: 24%;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    width: 65px;
+  }
+
+    .carousel-indicators {
+    width: auto;
+    height: auto;
+    transform: translateY(-50%);
+    top: 10% !important;
+    right: -50px !important;
+    left: auto;
+    transform: rotate(90deg) scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .grad {
+    width: 100%;
+    height: 450px;
+    background: #ffffff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(226, 229, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .smartPhone {
+    position: relative;
+    z-index: 9;
+  }
+  .smartPhone>img{
+      width: 94px;
+      position: relative;
+      top: 10px;
+  }
+  .rightSmartPhone {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    direction: rtl;
+    position: relative;
+    right: 25px;
+    z-index: 9;
+  }
+  .rightSmartPhone > h2 {
+    font-size:14px;
+    font-weight: 700;
+    font-family: VazirFDWOL;
+    position: relative;
+    top: 0px;
+  }
+  .rightSmartPhone > div {
+    width: 95%;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+  }
+  /* .rightSmartPhone > div:nth-of-type(2),
+  .rightSmartPhone > div:nth-of-type(3) {
+    position: relative;
+    left: 25px;
+  } */
+  .rightSmartPhone > div > img {
+    width: 18px;
+  }
+  .phone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .ContactSocialMedia {
+    /* width: 100%; */
+    position: relative;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+  }
+  .ContactSocialMedia>img {
+    position: relative;
+    /* top: 4px; */
+    width: 16px;
+  }
+  .ContactSocialMedia>img:nth-of-type(4) {
+    position: relative;
+    /* top: 4px; */
+    width: 20px;
+    left: 2px;
+  }
+  #Comment {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #f3f3f3;
+    z-index: 99;
+    margin-top: 50px;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    background-image: url(../image/comment01.svg);
+    background-repeat: repeat-x;
+    background-position: 28px 3px;
+    background-size: 130px auto;
+  }
+  .leftImage,
+  .rightImage {
+    width: 0%;
+    text-align: center;
+  }
+
+  .commnetForm {
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    justify-content: center;
+  }
+  .commnetForm > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(1) {
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    font-weight: 400;
+    color: #000000;
+  }
+  .commnetForm > form > div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input {
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    line-height: 25px;
+    border: none;
+    margin-left: 5px;
+    direction: rtl;
+    padding-right: 12px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    font-size: 10px;
+  }
+  .commnetForm > form > div:nth-of-type(2) input::placeholder,
+  .commnetForm > form textarea::placeholder {
+    color: #4c4c4c;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .commnetForm > form textarea {
+    width: 100%;
+    height: 100px;
+    direction: rtl;
+    padding-right: 12px;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    color: #4c4c4c;
+    font-family: VazirFDWOL;
+    resize: none;
+    font-size: 10px;
+  }
+
+  .commnetForm > form textarea:focus,
+  .commnetForm > form > div:nth-of-type(2) input:focus {
+    border: none;
+    outline: none;
+  }
+  .commnetForm > form input[type="button"] {
+    background-color: #1b198f;
+    width: 45px;
+    height: 30px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: VazirFDWOL;
+    color: white;
+    line-height: 30px;
+    cursor: pointer;
+  }
+
+  /*S_footer*/
+  #Footer {
+    padding: 20px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 15px;
+    gap: 10px;
+     position: relative;
+  }
+  .about {
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+   
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3{
+    display: none;
+  }
+  .aboutPara > p,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 12px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    position: relative;
+    top: 10px;
+  }
+
+  .socailMedia {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .socailMedia>a>img{
+    width: 27px;
+  }
+  .socailMedia>a:nth-of-type(4)>img{
+    width: 34px;
+  }
+  .accesibility {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+   .accesibility h3{
+    display: none;
+   }
+  .accesibility ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    right: 15px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    color: #1B198F;
+  }
+  .Addresss {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+   .Addresss > h3{
+    width: 95%;
+    text-align: right;
+    font-weight: 700;
+
+   }
+  .Addresss > div {
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .Addresss > div > div {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: VazirFDWOL;
+    text-align: right;
+  }
+  .NumAddresss{
+    width: 100%;
+    align-self: start;
+    text-align: right !important;
+  }
+  .mapPic {
+    width: 100%;
+  }
+  .mapPic > img {
+    width: 50%;
+  }
+  /*E_footer*/
+}

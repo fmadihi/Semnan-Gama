@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Sajad cheriki - Fatemeh Madihi - Fatemeh Khandan"
+    />
+    <title>مجتمع فنی تهران نمایندگی سمنان(برترین کشور)</title>
+    <!-- style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- S_header -->
+    <header>
+      <div
+        class="grayBck"
+        style="
+          width: 100vw;
+          height: 100vh;
+          background-color: rgba(0, 0, 0, 0.625);
+          position: fixed;
+          z-index: 998;
+          display: none;
+        "
+      ></div>
+      <div class="wrapper">
+        <div class="tHeader">
+          <div id="LogoSemnan">
+            <div id="img_Logo_Semnan">
+              <img src="./image/LogoSemnan.svg" alt="" />
+            </div>
+          </div>
+          <div class="nav">
+            <ul class="nav_menu">
+              <div class="closeGre" style="display: none">
+                <img
+                  src="./image/close_g.svg"
+                  alt=""
+                  class="closeGreIcon"
+                /><span>گروه آموزشی گاما</span>
+              </div>
+              <li class="nav_item"><a href="https://my.gama-training.com/login">آموزشگاه من</a></li>
+              <li class="nav_item"><a href="./index.html">صفحه اصلی</a></li>
+              <li class="nav_item">
+                <a href="./htm/contactUs.html">تماس با ما</a>
+              </li>
+              <li class="nav_item"><a href="./htm/courses.html">دوره ها</a></li>
+              <li class="nav_item">
+                <a href="./htm/cooperateUs.html">همکاری با ما</a>
+              </li>
+              <li class="nav_item">
+                <a href="./htm/AboutUs.html">درباره ما</a>
+              </li>
+              <div class="downIMG" style="display: none">
+                <img src="./image/down_menu_pic.svg" alt="" />
+              </div>
+            </ul>
+          </div>
+          <div id="Logo">
+            <div id="LogoText">گروه آموزشی گاما</div>
+            <div id="img_Logo">
+              <img src="./image/Logo.svg" alt="" />
+            </div>
+            <div class="menuCellphone" style="display: none">
+              <img src="./image/menu.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="bHeader">
+          <div class="slider001">
+            <div class="firstSlider">
+              <div
+                id="carouselExampleDark"
+                class="carousel carousel-dark slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img class="d-block w-100 slidImg01" alt="..." />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img class="d-block w-100 slidImg02" alt="..." />
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 slidImg03" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="searchBox">
+          <div class="search">
+            <span>
+              <img src="/image/icon/search_icon.svg" alt="" />
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="چی میخوای یاد بگیری؟"
+                autocomplete="off"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E_header -->
+    <main>
+      <!-- S_us -->
+      <div class="infoUs">
+        <div class="itemInfo">
+          <img src="./image/cap1.svg" alt="" />
+          <span>340</span>
+          <span>فراگیران موفق ما</span>
+        </div>
+        <div class="colLine"></div>
+        <div class="itemInfo">
+          <img src="./image/homework1.svg" alt="" />
+          <span>340</span>
+          <span>دوره های در حال برگزاری</span>
+        </div>
+        <div class="colLine"></div>
+        <div class="itemInfo">
+          <img src="./image/exam1.svg" alt="" />
+          <span>340</span>
+          <span>رضایت شما</span>
+        </div>
+        <div class="colLine"></div>
+        <div class="itemInfo">
+          <img src="./image/presentation1.svg" alt="" />
+          <span>340</span>
+          <span>اساتید مجرب ما</span>
+        </div>
+      </div>
+      <!-- E_us -->
+      <!-- S_category -->
+      <div class="category">
+        <div class="itemCategory">
+          <div><img src="./image/Category/Management.svg" alt="" /></div>
+          <div><img src="./image/Category/Art.svg" alt="" /></div>
+          <div><img src="./image/Category/Mekanik.svg" alt="" /></div>
+          <div><img src="./image/Category/IT.svg" alt="" /></div>
+          <div><img src="./image/Category/Karafarini.svg" alt="" /></div>
+          <div><img src="./image/Category/Language.svg" alt="" /></div>
+          <div><img src="./image/Category/Injeniour.svg" alt="" /></div>
+          <div><img src="./image/Category/Kids.svg" alt="" /></div>
+          <div><img src="./image/Category/Mali.svg" alt="" /></div>
+        </div>
+      </div>
+      <!-- E_category -->
+      <!-- S_dorehaye dar hal bar gozari -->
+      <div class="partOneDore" id="isregister">
+        <div class="titleDore">
+          <div>دوره های در حال برگزاری...</div>
+        </div>
+        <div class="slider">
+          <div class="swiper mySwiper sliderWrap">
+            <div class="swiper-wrapper swiWrap">
+              <!-- Slide items -->
+              <!-- اسلاید ۱ -->
+              <!-- <div class="swiper-slide">
+                <div class="sliderTXT">
+                  <div>عکاسی دیجیتال</div>
+                  <div>هنر و سینما</div>
+                </div>
+                <div class="sliderPcBtn">
+                  <div>
+                    <img src="./image/CourseSlider/Camera.svg" alt="" />
+                  </div>
+                  <div>
+                    <span>مشاهده دوره</span>
+                    <img src="./image/CourseSlider/Vector.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              </div>
+
+            <!-- Navigation buttons -->
+              <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- S_dorehaye dar hal sabtnam -->
+      <div class="currentCourses">
+        <h3>...دوره های درحال ثبت نام</h3>
+
+        <div class="sliderWrapper">
+          <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+              <!-- 10 آیتم -->
+              <!-- <div class="Box slide">
+              <div class="gradOne"></div>
+              <div class="pic">
+                <img src="./image/courses/Autodesk.svg" alt="" />
+              </div>
+              <div class="info">
+                <div class="nameCourses">
+                  <b>AUTOCAD </b><span>فناوری اطلاعات</span>
+                  <div class="startCourses">شروع دوره: 12 اردیبهشت 1404</div>
+                </div>
+
+                <div class="btnCoueses">
+                  <div>
+                    <a href="">مشاهده اطلاعات</a
+                    ><img src="../image/courses/arrow-left 1.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <div id="prevBtn">
+            <img src="./image/slider/previous1.svg" alt="" />
+          </div>
+          <div id="nextBtn">
+            <img src="./image/slider/previous2.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="accessCoueses">
+          <a href="./htm/courses.html">همه دوره ها</a
+          ><img src="./image/slider/back.svg" alt="" />
+        </div>
+      </div>
+      <!-- S_dorehaye mahbob -->
+      <div class="partOneDore" id="isCompleted">
+        <div class="titleDore">
+          <div>...دوره های محبوب برگزار شده</div>
+        </div>
+        <div class="slider">
+          <div class="swiper mySwiper sliderWrap02">
+            <div class="swiper-wrapper swiWrap02">
+              <!-- Slide items -->
+              <!-- <div class="swiper-slide swiper-slide02">
+                <div class="sliderTXT">
+                  <div>عکاسی دیجیتال</div>
+                  <div>هنر و سینما</div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- S_comment -->
+    <div id="Comment">
+      <div class="comment">
+        <div class="leftImage">
+          <!-- <img src="./image/comment.svg" alt="" /> -->
+        </div>
+        <div class="commnetForm">
+          <form action="">
+            <div>نظرات و پیشنهادات</div>
+            <div>
+              <input
+                id="FullName"
+                type="text"
+                name="fullname"
+                value=""
+                placeholder="نام و نام خانوادگی:"
+              />
+              <input
+                id="PhoneNum"
+                type="text"
+                name="phoneNum"
+                value=""
+                placeholder="شماره تماس:"
+              />
+            </div>
+            <textarea
+              name="comment"
+              id="CommentID"
+              cols="30"
+              rows="10"
+              placeholder="ثبت نظرات شما:"
+            ></textarea>
+            <input type="button" name="" value="ثبت" id="send" />
+          </form>
+        </div>
+        <div class="rightImage">
+          <!-- <img src="./image/comment.svg" alt="" /> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- E_comment -->
+    <!-- S_footer -->
+    <div id="Footer">
+      <div class="footer">
+        <div class="about">
+          <div class="footerLogo"><img src="./image/Logo.svg" alt="" /></div>
+          <div class="aboutPara">
+            <h3>درباره گاما</h3>
+            <p>
+              شروع هرچیزی سخته، ولی وقتی مسیر درستی رو انتخاب کنی،با خیال راحت و
+              بدون استرس میتونی از مسیر لذت ببری. ما در گاما، توی سفر به دنیای
+              آموزش کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات مون لذت ببریم.
+            </p>
+            <div class="socailMedia">
+              <a href=""><img src="./image/footer/telegram.svg" alt="" /></a>
+              <a href=""
+                ><img src="./image/footer/linkedin-logo 1.svg" alt=""
+              /></a>
+              <a href=""><img src="./image/footer/facebook.svg" alt="" /></a>
+              <a href=""><img src="./image/footer/instagram.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="accesibility">
+          <h3>دسترسی سریع</h3>
+          <ul>
+            <li><a href="./htm/courses.html">دوره ها</a></li>
+            <li><a href="https://my.gama-training.com/login">آموزشگاه من</a></li>
+            <li><a href="./htm/cooperateUs.html">همکاری با ما</a></li>
+            <li><a href="./htm/AboutUs.html">درباره ما</a></li>
+            <li><a href="./htm/contactUs.html">تماس با ما</a></li>
+          </ul>
+        </div>
+        <div class="Addresss">
+          <h3>آدرس</h3>
+          <div>
+            <div>میدان مشاهیر خیابان قدس نهم تقاطع شیخ فضال الله نوری</div>
+            <div>پلاک 45</div>
+            <div>موسسه آموزشی</div>
+            <div><b>گاما </b>نماینده مجتمع فنی تهران</div>
+            <br />
+            <div class="NumAddresss"><b>شماره تماس: </b>8-33441455</div>
+          </div>
+        </div>
+        <div class="mapPic">
+          <img src="./image/footer/location.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- E_footer -->
+    <script src="./api/baseUrl.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script src="./api/getSliderApi.js"></script>
+    <script src="./api/postComment.js"></script>
+    <script src="./api/getMain.js"></script>
+    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      $(function () {
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 10,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+          },
+        });
+      });
+      const swiper01 = new Swiper(".category", {
+        slidesPerView: 100,
+        spaceBetween: 10,
+        breakpoints: {
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector(".search input");
+
+        searchInput.addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            const value = searchInput.value.trim();
+            if (value !== "") {
+              // انتقال به صفحه دوره‌ها با پارامتر جستجو
+              // localStorage.setItem("SearchText", JSON.stringify(value));
+              // window.location.href = `htm/courses.html?search=${encodeURIComponent(
+              //   value
+              // )}`;
+              localStorage.setItem("SearchText", JSON.stringify(value)); // ذخیره اطلاعات کامل دوره
+              window.location.href = "./htm/courses.html"; // رفتن به صفحه درس
+            }
+          }
+        });
+      });
+    </script>
+
+    <!-- purple slider -->
+    <script>
+      function initSlider() {
+        const track = document.getElementById("sliderTrack");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const Box = document.getElementsByClassName("Box");
+        var totalItems = Box.length;
+        let currentSlide = 0;
+        let itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
+        var maxSlide;
+
+        function updateSlider() {
+          const slideWidth = track.children[0].offsetWidth + 20;
+          const moveX = slideWidth * itemsPerSlide * currentSlide;
+          track.style.transform = `translateX(-${moveX}px)`;
+        }
+        function MAX_Size(totalItems, itemsPerSlide) {
+          maxSlide = Math.max(
+            0,
+            Math.ceil((totalItems - itemsPerSlide) / itemsPerSlide)
+          );
+        }
+        function resetSlider() {
+          itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
+          MAX_Size(totalItems, itemsPerSlide);
+          if (currentSlide > maxSlide) currentSlide = maxSlide;
+          updateSlider();
+        }
+
+        nextBtn.addEventListener("click", () => {
+          if (currentSlide > 0) {
+            totalItems = Box.length;
+            MAX_Size(totalItems, itemsPerSlide);
+            currentSlide--;
+            updateSlider();
+          }
+        });
+
+        prevBtn.addEventListener("click", () => {
+          if (currentSlide < maxSlide) {
+            totalItems = Box.length;
+            MAX_Size(totalItems, itemsPerSlide);
+            currentSlide++;
+            updateSlider();
+          }
+        });
+
+        window.addEventListener("resize", () => {
+          resetSlider();
+        });
+
+        resetSlider();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initSlider();
+      });
+    </script>
+    <script>
+      const numberInput = document.getElementById("PhoneNum");
+
+      numberInput.addEventListener("keydown", function (e) {
+        if (
+          !(
+            (e.key >= "0" && e.key <= "9") || // عدد
+            ["Backspace", "ArrowLeft", "ArrowRight", "Tab"].includes(e.key)
+          )
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
