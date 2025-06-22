@@ -267,6 +267,7 @@
   }
   .commnetForm > form textarea {
     width: 100%;
+    height:164px;
     direction: rtl;
     padding-right: 12px;
     border: none;
