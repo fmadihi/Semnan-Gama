@@ -140,10 +140,9 @@ $(function () {
       alert("لطفا شماره تماس خود را بنویسید.");
     } else if (departementSelect.length == 0) {
       alert("لطفا دپارتمان را انتخاب نمایید.");
-    } else if(!formData){
-      alert('لطفا رزومه خود را بارگذاری نمایید.')
-    }
-    else {
+    } else if (!formData) {
+      alert("لطفا رزومه خود را بارگذاری نمایید.");
+    } else {
       formData.append("full_name", fullName.value);
       formData.append("phone_number", PhoneNum.value);
       formData.append("email", EmailAddresss.value);
@@ -172,16 +171,15 @@ $(function () {
         setTimeout(() => {
           // window.location.href = "./cooperateUsS.html";
           // window.location.assign("./cooperateUsS.html");
-      window.location.replace("./cooperateUsS.html");
-
+          window.location.replace("./cooperateUsS.html");
         }, 2000);
       } else {
         alert("مشکلی پیش آمده است!");
       }
-// window.location.href = "./cooperateUsS.html";
-//           window.location.assign("./cooperateUsS.html");
+      // window.location.href = "./cooperateUsS.html";
+      //           window.location.assign("./cooperateUsS.html");
       window.location.replace("./cooperateUsS.html");
-      
+
       setTimeout(() => {
         $(".showseccessbox").css({
           display: "block",
@@ -195,7 +193,9 @@ $(function () {
 
       // return result;
     } catch (error) {
-      alert('لطفا تمامی موارد را چک کنید. اطلاعاتی که وارد کرده اید نادرست است. اگر از صحت اطلاعات خود مطمئن هستید لطفا چند دقیقه دیگر مجددا امتحان کنید.')
+      alert(
+        "لطفا تمامی موارد را چک کنید. اطلاعاتی که وارد کرده اید نادرست است. اگر از صحت اطلاعات خود مطمئن هستید لطفا چند دقیقه دیگر مجددا امتحان کنید."
+      );
 
       // console.error("خطا در ارسال کامنت:", error);
       return false;
@@ -209,7 +209,7 @@ $(function () {
   let EmailAddresss01 = document.getElementById("EmailAddresss01");
   let ExtraText = document.getElementById("ExtraText01");
 
-   //uplaod resume
+  //uplaod resume
   const resumeBtn02 = document.getElementById("resume02");
   const fileInput02 = document.getElementById("fileInput02");
   const fileNameDisplay02 = document.getElementById("fileName02");
@@ -243,8 +243,7 @@ $(function () {
       alert("لطفا نام خود یا نام شرکت خود را بنویسید.");
     } else if (jobTitle.value == "" || jobTitle.value == undefined) {
       alert("لطفا عنوان شغلی شرکت خود را بنویسید.");
-    }
-    else if (phoneNum01.value == "" || phoneNum01.value == undefined) {
+    } else if (phoneNum01.value == "" || phoneNum01.value == undefined) {
       alert("لطفا شماره تماس خود را بنویسید.");
     } else {
       let newCoor = {
@@ -278,16 +277,15 @@ $(function () {
         setTimeout(() => {
           // window.location.href = "./cooperateUsS.html";
           // window.location.assign("./cooperateUsS.html");
-      window.location.replace("./cooperateUsS.html");
-
+          window.location.replace("./cooperateUsS.html");
         }, 2000);
       } else {
         alert("مشکلی پیش آمده است!");
       }
-// window.location.href = "./cooperateUsS.html";
-//           window.location.assign("./cooperateUsS.html");
+      // window.location.href = "./cooperateUsS.html";
+      //           window.location.assign("./cooperateUsS.html");
       window.location.replace("./cooperateUsS.html");
-      
+
       //     setTimeout(() => {
       //   $(".showseccessbox").css({
       //     display: "block",
@@ -301,7 +299,9 @@ $(function () {
 
       // return result;
     } catch (error) {
-      alert('لطفا تمامی موارد را چک کنید. اطلاعاتی که وارد کرده اید نادرست است. اگر از صحت اطلاعات خود مطمئن هستید لطفا چند دقیقه دیگر مجددا امتحان کنید.')
+      alert(
+        "لطفا تمامی موارد را چک کنید. اطلاعاتی که وارد کرده اید نادرست است. اگر از صحت اطلاعات خود مطمئن هستید لطفا چند دقیقه دیگر مجددا امتحان کنید."
+      );
       // console.error("خطا در ارسال کامنت:", error);
     }
   }
