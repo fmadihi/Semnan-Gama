@@ -28,32 +28,32 @@ $(function () {
   }, 1000);
 
   /*put color img in mobile size */
-  async function updateImagesForMobile() {
-    const isMobile = window.innerWidth < 560;
-    const imgs = document.querySelectorAll(".itemCategory img");
+  // async function updateImagesForMobile() {
+  //   const isMobile = window.innerWidth < 560;
+  //   const imgs = document.querySelectorAll(".itemCategory img");
 
-    imgs.forEach((img) => {
-      const originalSrc = img.src;
-      const hoverSrc = originalSrc.replace(".svg", "_hover.svg");
+  //   imgs.forEach((img) => {
+  //     const originalSrc = img.src;
+  //     const hoverSrc = originalSrc.replace(".svg", "_hover.svg");
 
-      if (isMobile) {
-        img.src = hoverSrc;
-      } else {
-        img.src = originalSrc;
-      }
+  //     if (isMobile) {
+  //       img.src = hoverSrc;
+  //     } else {
+  //       img.src = originalSrc;
+  //     }
 
-      // افکت هاور فقط برای دسکتاپ فعال باشه
-      img.addEventListener("mouseenter", () => {
-        if (!isMobile) img.src = hoverSrc;
-      });
+  //     // افکت هاور فقط برای دسکتاپ فعال باشه
+  //     img.addEventListener("mouseenter", () => {
+  //       if (!isMobile) img.src = hoverSrc;
+  //     });
 
-      img.addEventListener("mouseleave", () => {
-        if (!isMobile) img.src = originalSrc;
-      });
-    });
-  }
-  const container = document.querySelector(".itemCategory");
-  container.scrollLeft = container.scrollWidth;
-  window.addEventListener("resize", updateImagesForMobile);
-  window.addEventListener("load", updateImagesForMobile);
+  //     img.addEventListener("mouseleave", () => {
+  //       if (!isMobile) img.src = originalSrc;
+  //     });
+  //   });
+  // }
+  // const container = document.querySelector(".itemCategory");
+  // container.scrollLeft = container.scrollWidth;
+  // window.addEventListener("resize", updateImagesForMobile);
+  // window.addEventListener("load", updateImagesForMobile);
 });
