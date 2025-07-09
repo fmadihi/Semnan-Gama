@@ -60,14 +60,16 @@
                   class="closeGreIcon"
                 /><span>گروه آموزشی گاما</span>
               </div>
-              <li class="nav_item"><a href="https://my.gama-training.com/login">آموزشگاه من</a></li>
               <li class="nav_item"><a href="./index.html">صفحه اصلی</a></li>
               <li class="nav_item">
-                <a href="./htm/contactUs.html">تماس با ما</a>
+                <a href="https://my.gama-training.com/login">آموزشگاه من</a>
               </li>
               <li class="nav_item"><a href="./htm/courses.html">دوره ها</a></li>
               <li class="nav_item">
                 <a href="./htm/cooperateUs.html">همکاری با ما</a>
+              </li>
+              <li class="nav_item">
+                <a href="./htm/contactUs.html">تماس با ما</a>
               </li>
               <li class="nav_item">
                 <a href="./htm/AboutUs.html">درباره ما</a>
@@ -179,22 +181,67 @@
       <!-- S_category -->
       <div class="category">
         <div class="itemCategory">
-          <div><img src="./image/Category/Management.svg" alt="" /></div>
-          <div><img src="./image/Category/Art.svg" alt="" /></div>
-          <div><img src="./image/Category/Mekanik.svg" alt="" /></div>
-          <div><img src="./image/Category/IT.svg" alt="" /></div>
-          <div><img src="./image/Category/Karafarini.svg" alt="" /></div>
-          <div><img src="./image/Category/Language.svg" alt="" /></div>
-          <div><img src="./image/Category/Injeniour.svg" alt="" /></div>
-          <div><img src="./image/Category/Kids.svg" alt="" /></div>
-          <div><img src="./image/Category/Mali.svg" alt="" /></div>
+          <div><img src="./image/Category/Management.svg" alt="" />
+          <span>مالی و حسابداری</span></div>
+          <div><img src="./image/Category/Art.svg" alt="" />
+          <span>کودک و نوجوان</span>
+        </div>
+          <div><img src="./image/Category/Mekanik.svg" alt="" />
+          <span>مهندسی</span>
+        </div>
+          <div><img src="./image/Category/IT.svg" alt="" />
+          <span>زبان های خارجه</span>
+        </div>
+          <div><img src="./image/Category/Karafarini.svg" alt="" />
+          <span>کارآفرینی</span>
+        </div>
+          <div><img src="./image/Category/Language.svg" alt="" />
+          <span>فناوری اطلاعات</span>
+        </div>
+          <div><img src="./image/Category/Injeniour.svg" alt="" />
+          <span>مکانیک</span>
+        </div>
+          <div><img src="./image/Category/Kids.svg" alt="" />
+          <span>هنر و سینما</span>
+        </div>
+          <div><img src="./image/Category/Mali.svg" alt="" />
+          <span>مدیریت</span>
+        </div>
+        </div>
+        <div class="itemCategory" style="display: none;">
+          <div><div><img src="./image/Category/Injeniour_hover.svg" alt="" /></div>
+          <span>مکانیک</span>
+        </div>
+          <div><div><img src="./image/Category/Management_hover.svg" alt="" /></div>
+          <span>مالی و حسابداری</span></div>
+          <div><img src="./image/Category/Art_hover.svg" alt="" />
+          <span>کودک و نوجوان</span>
+        </div>
+          <div><div><img src="./image/Category/Mekanik_hover.svg" alt="" /></div>
+          <span>مهندسی</span>
+        </div>
+          <div><div><img src="./image/Category/IT_hover.svg" alt="" /></div>
+          <span>زبان های خارجه</span>
+        </div>
+          <div><div><img src="./image/Category/Karafarini_hover.svg" alt="" /></div>
+          <span>کارآفرینی</span>
+        </div>
+          <div><div><img src="./image/Category/language_hover.svg" alt="" /></div>
+          <span>فناوری اطلاعات</span>
+        </div>
+          <div><div><img src="./image/Category/Kids_hover.svg" alt="" /></div>
+          <span>هنر و سینما</span>
+        </div>
+          <div><div><img src="./image/Category/Mali_hover.svg" alt="" /></div>
+          <span>مدیریت</span>
+        </div>
         </div>
       </div>
       <!-- E_category -->
       <!-- S_dorehaye dar hal bar gozari -->
       <div class="partOneDore" id="isregister">
         <div class="titleDore">
-          <div>دوره های در حال برگزاری...</div>
+          <div>...دوره های در حال برگزاری</div>
         </div>
         <div class="slider">
           <div class="swiper mySwiper sliderWrap">
@@ -227,7 +274,7 @@
       </div>
       <!-- S_dorehaye dar hal sabtnam -->
       <div class="currentCourses">
-        <h3>...دوره های درحال ثبت نام</h3>
+        <h3>دوره های درحال ثبت نام...</h3>
 
         <div class="sliderWrapper">
           <div class="slider-container">
@@ -305,6 +352,7 @@
                 name="fullname"
                 value=""
                 placeholder="نام و نام خانوادگی:"
+                title="نام و نام خانوادگی"
               />
               <input
                 id="PhoneNum"
@@ -312,6 +360,7 @@
                 name="phoneNum"
                 value=""
                 placeholder="شماره تماس:"
+                title="شماره تماس"
               />
             </div>
             <textarea
@@ -320,6 +369,7 @@
               cols="30"
               rows="10"
               placeholder="ثبت نظرات شما:"
+              title="ثبت نظرات شما"
             ></textarea>
             <input type="button" name="" value="ثبت" id="send" />
           </form>
@@ -357,7 +407,9 @@
           <h3>دسترسی سریع</h3>
           <ul>
             <li><a href="./htm/courses.html">دوره ها</a></li>
-            <li><a href="https://my.gama-training.com/login">آموزشگاه من</a></li>
+            <li>
+              <a href="https://my.gama-training.com/login">آموزشگاه من</a>
+            </li>
             <li><a href="./htm/cooperateUs.html">همکاری با ما</a></li>
             <li><a href="./htm/AboutUs.html">درباره ما</a></li>
             <li><a href="./htm/contactUs.html">تماس با ما</a></li>
@@ -388,6 +440,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <!-- <script src="./script.js"></script> -->
     <script src="./api/getSliderApi.js"></script>
