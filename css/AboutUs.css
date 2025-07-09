@@ -25,6 +25,9 @@
 .nav_item{
   transition: all 200ms linear;
 }
+a{
+  cursor: pointer;
+}
 /* Footer Part */
 @media (min-width: 1200px) {
   header {
@@ -83,7 +86,7 @@
     /* width: 100%; */
     display: flex;
     flex-direction: row-reverse;
-    gap: 25px;
+    gap: 28px;
     position: relative;
     /* left: 50px; */
     list-style-type: none;
@@ -133,7 +136,7 @@
   }
   .dream {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 26px;
     color: #000000;
     font-family: VazirFDWOL;
     direction: rtl;
@@ -175,7 +178,23 @@
     text-align: center;
     direction: rtl;
   }
-
+.first > div:nth-of-type(2) {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .first img{
+    width: 280px;
+  }
+  .first > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    width: 464px;
+    text-align: center;
+    direction: rtl;
+  }
   .second > .grad {
     z-index: -1;
     position: absolute;
@@ -289,14 +308,13 @@
   }
   .Circle > div > img:nth-of-type(1) {
     position: absolute;
-    width:120px;
-    height: 120px;
   }
   .Circle > div > img:nth-of-type(2) {
+    width: 60px;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 60px;
-    left: 60px;
+    top: 75px;
+    left: 75px;
   }
   .Circle > div >span{
     display: inline-block;
@@ -436,6 +454,7 @@ gap: 30px;
     font-size: 16px;
     color: #000000;
     text-align: justify;
+    font-weight: 800;
   }
   .aboutPara > p {
     font-weight: 400;
@@ -469,6 +488,7 @@ gap: 30px;
     align-items: center;
     justify-content: center;
     gap: 8px;
+    padding: 0;
   }
   .accesibility ul li a {
     text-decoration: none;
@@ -2037,9 +2057,10 @@ body {
     position: relative;
     right: 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end;margin-right: 10px;
   }
   #LogoText {
+    display: none;
     width: 70%;
     font-weight: 400;
     font-size:17px;
@@ -2052,7 +2073,9 @@ body {
     align-self: center;
   }
   #img_Logo > img {
-    width: 50px;
+    width: 32px;
+    position: relative;
+    right: 7px;
   }
   .menuCellphone{
     display: inline-block !important;
@@ -2133,10 +2156,10 @@ body {
   }
   #img_Logo_Semnan {
     position: relative;
-    left: 0px;
+    left: 10px;
   }
   #img_Logo_Semnan > img {
-    width: 65px;
+    width: 40px;
   }
 
   .bHeader {
@@ -2414,6 +2437,8 @@ overflow-x: auto;  /* فعال کردن اسکرول افقی */
   scroll-snap-type: x mandatory;  /* بهتر شدن رفتار اسکرول */
   -ms-overflow-style: none;  /* مخفی کردن نوار اسکرول برای IE */
   scrollbar-width: none;  /* مخفی کردن نوار اسکرول برای Firefox */
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
   }
   .diffrentCource>div:nth-of-type(1){
     display: none;
