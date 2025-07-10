@@ -2408,7 +2408,7 @@ background-color: #000000;
   .mapPic {
     width: 100%;
   }
-  .mapPic > img {
+  .mapPic  img {
     width: 50%;
   }
   /*E_footer*/

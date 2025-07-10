@@ -1621,7 +1621,7 @@ a{
   .mapPic {
     width: 100%;
   }
-  .mapPic > img {
+  .mapPic  img {
     width: 50%;
   }
   /*E_footer*/
