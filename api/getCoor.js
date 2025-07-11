@@ -6,16 +6,16 @@ $(function () {
   let EmailAddresss = document.getElementById("EmailAddresss");
 
   let departementSelect;
-  //get departeman btn
+  //get departeman btn = hamkari ba ma
+
   async function getFetchDeparteman() {
     try {
-      const response = await fetch(`${baseUrl}/staff/department/`);
+      const response = await fetch(`${baseUrl}/staff/job_title/`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
-      // console.log("depart", data);
 
       const container = document.getElementById("departmentCheckboxes");
       if (!container)
@@ -26,45 +26,45 @@ $(function () {
 
       data.forEach((elem) => {
         // فقط دپارتمان‌های فعال را اضافه کنیم
-        if (elem.is_active) {
-          // ساخت label
-          const label = document.createElement("label");
+        // if (elem.is_active) {
+        // ساخت label
+        const label = document.createElement("label");
 
-          // ساخت input چک‌باکس
-          const checkbox = document.createElement("input");
-          checkbox.type = "checkbox";
-          checkbox.value = `department${elem.id}`;
+        // ساخت input چک‌باکس
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = `department${elem.id}`;
 
-          // هنگام تغییر وضعیت چک‌باکس، آرایه بروزرسانی می‌شود
-          checkbox.addEventListener("change", (e) => {
-            const allCheckboxes = document.querySelectorAll(
-              '#departmentCheckboxes input[type="checkbox"]'
-            );
+        // هنگام تغییر وضعیت چک‌باکس، آرایه بروزرسانی می‌شود
+        checkbox.addEventListener("change", (e) => {
+          const allCheckboxes = document.querySelectorAll(
+            '#departmentCheckboxes input[type="checkbox"]'
+          );
 
-            if (e.target.checked) {
-              // وقتی یکی تیک خورد، بقیه رو پاک کن
-              allCheckboxes.forEach((cb) => {
-                if (cb !== e.target) {
-                  cb.checked = false;
-                }
-              });
+          if (e.target.checked) {
+            // وقتی یکی تیک خورد، بقیه رو پاک کن
+            allCheckboxes.forEach((cb) => {
+              if (cb !== e.target) {
+                cb.checked = false;
+              }
+            });
 
-              // مقدار انتخابی رو ذخیره کن
-              departementSelect = elem.id;
-            } else {
-              // اگر تیک برداشته شد (هیچ گزینه‌ای انتخاب نیست)
-              departementSelect = 0; // یا 0
-            }
-          });
+            // مقدار انتخابی رو ذخیره کن
+            departementSelect = elem.id;
+          } else {
+            // اگر تیک برداشته شد (هیچ گزینه‌ای انتخاب نیست)
+            departementSelect = 0; // یا 0
+          }
+        });
 
-          // متن دپارتمان
-          const textNode = document.createTextNode(elem.department_name);
+        // متن دپارتمان
+        const textNode = document.createTextNode(elem.job_name);
 
-          label.appendChild(textNode);
-          label.appendChild(checkbox);
+        label.appendChild(textNode);
+        label.appendChild(checkbox);
 
-          container.appendChild(label);
-        }
+        container.appendChild(label);
+        // }
       });
     } catch (error) {
       const courseListEl = document.getElementById("courseList");
@@ -147,7 +147,7 @@ $(function () {
       formData.append("phone_number", PhoneNum.value);
       formData.append("email", EmailAddresss.value);
       formData.append("explanation", textarea.value);
-      formData.append("department", departementSelect);
+      formData.append("job_title", departementSelect);
       postComment(formData, e);
       return false;
     }
@@ -164,7 +164,6 @@ $(function () {
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-
       const result = await response.json();
       // window.location.href = "./cooperateUsS.html";
       if (response.ok) {
@@ -246,18 +245,84 @@ $(function () {
     } else if (phoneNum01.value == "" || phoneNum01.value == undefined) {
       alert("لطفا شماره تماس خود را بنویسید.");
     } else {
-      let newCoor = {
-        company_name: ComanyName.value,
-        phone_number: phoneNum01.value,
-        email: EmailAddresss01.value,
-        explanation: ExtraText.value,
-        job_title: jobTitle.value,
-      };
-      postCommentCoor(newCoor);
+      if (formData02) {
+        formData02.append("company_name", ComanyName.value);
+        formData02.append("phone_number", phoneNum01.value);
+        formData02.append("email", EmailAddresss01.value);
+        formData02.append("explanation", ExtraText.value);
+        formData02.append("job_title", jobTitle.value);
+        postCommentCoor(formData02, e);
+        return false;
+        // let newCoor = {
+        //   company_name: ComanyName.value,
+        //   phone_number: phoneNum01.value,
+        //   email: EmailAddresss01.value,
+        //   explanation: ExtraText.value,
+        //   job_title: jobTitle.value,
+        // };
+        // postCommentCoor(newCoor);
+      } else {
+        let newCoor = {
+          company_name: ComanyName.value,
+          phone_number: phoneNum01.value,
+          email: EmailAddresss01.value,
+          explanation: ExtraText.value,
+          job_title: jobTitle.value,
+        };
+        postCommentCoor02(newCoor, e);
+        return false;
+      }
     }
   });
 
-  async function postCommentCoor(newCoor) {
+  async function postCommentCoor(newCoor, e) {
+    e.preventDefault();
+    try {
+      const response = await fetch(`${baseUrl}/staff/HR_need/`, {
+        method: "POST",
+        body: newCoor,
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
+      // window.location.href = "./cooperateUsS.html";
+      if (response.ok) {
+        setTimeout(() => {
+          // window.location.href = "./cooperateUsS.html";
+          // window.location.assign("./cooperateUsS.html");
+          window.location.replace("./cooperateUsS.html");
+        }, 2000);
+      } else {
+        alert("مشکلی پیش آمده است!");
+      }
+      // window.location.href = "./cooperateUsS.html";
+      //           window.location.assign("./cooperateUsS.html");
+      window.location.replace("./cooperateUsS.html");
+
+      //     setTimeout(() => {
+      //   $(".showseccessbox").css({
+      //     display: "block",
+      //   });
+      // }, 2000);
+      // alert(
+      //   "اطلاعات شما در سامانه ثبت شد. پس از بررسی نهایی تا 72 ساعت دیگر با شما تماس خواهیم گرفت. نام شما با موفقیت انجام شد."
+      // );
+      // console.log("کامنت با موفقیت ارسال شد:", result);
+      return false;
+
+      // return result;
+    } catch (error) {
+      alert(
+        "لطفا تمامی موارد را چک کنید. اطلاعاتی که وارد کرده اید نادرست است. اگر از صحت اطلاعات خود مطمئن هستید لطفا چند دقیقه دیگر مجددا امتحان کنید."
+      );
+      // console.error("خطا در ارسال کامنت:", error);
+    }
+  }
+  async function postCommentCoor02(newCoor, e) {
+    e.preventDefault();
     try {
       const response = await fetch(`${baseUrl}/staff/HR_need/`, {
         method: "POST",
