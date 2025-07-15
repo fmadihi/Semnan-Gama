@@ -178,7 +178,7 @@ function getPersianMonthName(dateStringSend) {
   }
   // استفاده از تابع
   const courseStartDate = courseData.course_start_date; // تاریخ شمسی
-
+console.log('1',courseStartDate)
   const formattedDate = getPersianMonthName(courseStartDate);
 
   $(".start_lessen").text("شروع دوره: " + formattedDate);
@@ -198,6 +198,7 @@ function getPersianMonthName(dateStringSend) {
       }
 
       const data = await response.json();
+      console.log(data)
       depart = data;
     } catch (error) {
       document.getElementById(
@@ -266,5 +267,5 @@ function getPersianMonthName(dateStringSend) {
     updateTimer(); // برای بار اول بدون تأخیر نمایش بده
     timer = setInterval(updateTimer, 1000);
   }
-  startCountdown(courseData.course_start_date);
+  startCountdown(courseData.created_at);
 });
