@@ -1,344 +1,346 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  @font-face {
-    font-family: VazirFDWOL;
-    src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf");
-    src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot");
-    src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff");
-    src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2");
-  }
-  @font-face {
-    font-family: VazirMatn;
-    src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
-    src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.eot");
-    src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
-    src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
-  }
-  .nav_item:hover{
-    border-top: 1px solid #000000;
-    padding-top: 5px;
-  }
-  .nav_item{
-    transition: all 200ms linear;
-  }
-  a,.btnCoueses{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: VazirFDWOL;
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Medium-FD-WOL.woff2");
+}
+@font-face {
+  font-family: VazirMatn;
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.ttf");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.eot");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
+  src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
+}
+.nav_item:hover {
+  border-top: 1px solid #000000;
+  padding-top: 5px;
+}
+.nav_item {
+  transition: all 200ms linear;
+}
+a,
+.btnCoueses {
   cursor: pointer;
 }
-  /* Footer Part */
-  @media (min-width: 1200px) {
-    header {
-      width: 100%;
-      background-color: #ffffff;
-      height: 620px;
-    }
-    .wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .tHeader,
-    .nav_menu,
-    #Logo,
-    .bHeader {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      z-index: 9;
-    }
-    .tHeader {
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 15px;
-    }
-    #Logo {
-      position: relative;
-      right: 30px;
-    }
-    #LogoText {
-      /* width: 180px; */
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 40px;
-      position: relative;
-      font-family: VazirMatn;
-      right: 15px;
-      text-align: center;
-    }
-    #img_Logo > img {
-      width: 85px;
-    }
-    .nav {
-      display: flex !important;
-      justify-content: center;
-      align-self: center;
-      /* margin: 0 auto; */
-    }
-    .nav_menu {
-      /* width: 100%; */
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 28px;
-      position: relative;
-      /* left: 50px; */
-      list-style-type: none;
-    }
-    .nav_menu > li > a {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      text-decoration: none;
-      color: #000000;
-      font-family: VazirFDWOL;
-    }
-    #img_Logo_Semnan {
-      position: relative;
-      left: 30px;
-    }
-    .bHeader {
-      width: 100%;
-      /* gap: 50px; */
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: -30px;
-      flex-direction: row;
-      padding: 0px 50px 10px 50px;
-    }
-    .leftHeader img{
-      width: 600px;
-    }
-    .rightHeader{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        direction: rtl;
-        gap: 10px;
-        text-align: right;
-        position: relative;
-        top: -50px;
-        right: 15px;
-    }
-    .rightHeader h3,
-    .rightHeader div,
-    .rightHeader div b{
-        font-family: VazirFDWOL;
-        color: #000000;
-    }
+/* Footer Part */
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 620px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 30px;
+  }
+  #LogoText {
+    /* width: 180px; */
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 15px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 28px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 30px;
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -30px;
+    flex-direction: row;
+    padding: 0px 50px 10px 50px;
+  }
+  .leftHeader img {
+    width: 600px;
+  }
+  .rightHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    direction: rtl;
+    gap: 10px;
+    text-align: right;
+    position: relative;
+    top: -50px;
+    right: 15px;
+  }
+  .rightHeader h3,
+  .rightHeader div,
+  .rightHeader div b {
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
 
-    .rightHeader h3{
-        font-weight: 400;
-      font-size: 26px;
-    }
-    
-    .rightHeader b{
-        font-weight: 700;
-      font-size: 28px;
-    }
-    
-    .rightHeader div{
-        font-weight: 400;
-      font-size: 19px;
-    }
+  .rightHeader h3 {
+    font-weight: 400;
+    font-size: 26px;
+  }
 
-    .searchBox {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 50px;
-      }
-      
-      .search > span {
-        position: relative;
-        left: 15px;
-      }
-      .search > span img {
-        position: absolute;
-        left: 0px;
-        top: 3px;
-        z-index: 999;
-      }
-      .search input {
-        width: 537px;
-        height: 39px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #AF92EE;
-        border:1.5px solid #AF92EE;
-        border-radius: 28px;
-        position: relative;
-        right: 15px;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: VazirMatn;
-        direction: rtl;
-        color: #ffffff;
-        text-indent: 15px;
-        transition: all 300ms linear;
-      }
-      
-      input::placeholder {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: VazirMatn;
-      }
-      .search input:hover {
-        background-color: #ffffff;
-        border-color: #000000;
-        color: #000000;
-      }
-      .search input:hover::placeholder {
-        color: #000000;
-      }
-      .search:hover img {
-        content: url("../image/icon/search_icon_hover.svg");
-      }
-          /* main */
-    main {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0px 60px 30px 60px;
-      row-gap: 70px;
-    }
+  .rightHeader b {
+    font-weight: 700;
+    font-size: 28px;
+  }
 
-    .partOne{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:center;
-      align-items: center;
-  gap: 25px;
-      flex-wrap: wrap;
-    }
+  .rightHeader div {
+    font-weight: 400;
+    font-size: 19px;
+  }
 
-    .partOneTitle{
-      width: 100%;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: VazirFDWOL;
-      color: #000000;
-      text-align: center;
-    }
-    .Box{
-      width: 328px;
-      height: 388px;
-      box-shadow: 0px 4px 4px 0px #0000002E,0px 4px 16px 0px #00000029;
-      position: relative;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      direction: rtl;
-    }
-    .gradOne {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FFCFCF 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradSecond {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #CEEAF7 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradThird {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FEFFA8 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .Box div.pic{
-      width: 100%;
-      height: 272px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
+  .searchBox {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+
+  .search > span {
+    position: relative;
+    left: 15px;
+  }
+  .search > span img {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    z-index: 999;
+  }
+  .search input {
+    width: 537px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af92ee;
+    border: 1.5px solid #af92ee;
+    border-radius: 28px;
+    position: relative;
+    right: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirMatn;
+    direction: rtl;
+    color: #ffffff;
+    text-indent: 15px;
+    transition: all 300ms linear;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirMatn;
+  }
+  .search input:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+  }
+  .search input:hover::placeholder {
+    color: #000000;
+  }
+  .search:hover img {
+    content: url("../image/icon/search_icon_hover.svg");
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px 30px 60px;
+    row-gap: 70px;
+  }
+
+  .partOne {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .partOneTitle {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .Box {
+    width: 328px;
+    height: 388px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 100%;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
   .Box div.pic img {
     position: relative;
     /* top: 30px; */
   }
-    .info{
-      width: 90%;
-      height: 116px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
-    top:0px;
-    }
-  .nameCourses b{
+  .info {
+    width: 90%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 0px;
+  }
+  .nameCourses b {
     font-size: 24px;
     font-weight: 700;
     font-family: inter;
     color: #000000;
     margin-left: 3px;
   }
-  .nameCourses span{
+  .nameCourses span {
     font-size: 12px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .startCourses{
+  .startCourses {
     font-size: 14px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .btnCoueses{
+  .btnCoueses {
     width: 140px;
     height: 32px;
     border-radius: 8px;
-    background-color: #AF92EE;
+    background-color: #af92ee;
     box-shadow: 0px 2px 2px 0px #00000029;
     display: flex;
     flex-direction: row-reverse;
@@ -350,442 +352,443 @@
     transition: all 300ms linear;
     line-height: 32px;
   }
-  .btnCoueses a{
+  .btnCoueses a {
     color: white;
     font-size: 14px;
     font-weight: 400;
     font-family: VazirFDWOL;
     text-decoration: none;
   }
-  .btnCoueses img{
+  .btnCoueses img {
     position: relative;
     top: 5px;
   }
-  .btnCoueses:hover{
-background-color: #000000;
+  .btnCoueses:hover {
+    background-color: #000000;
   }
-  
-    /*footer*/
-    #Footer {
-      margin-top: 50px;
-      padding: 20px 0px;
-    }
-  
-    .footer {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      border-radius: 6px;
-    }
-    .about {
-      width: 28%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 30px;
-    }
-    .footerLogo > img {
-      width: 91px;
-    }
-    .aboutPara {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      direction: rtl;
-    }
-    .aboutPara > h3,
-    .aboutPara > p,
-    .accesibility > h3,
-    .Addresss > h3 {
-      font-family: VazirFDWOL;
-      font-size: 16px;
-      color: #000000;
-      text-align: justify;
-      font-weight: 800;
-    }
-    .aboutPara > p {
-      font-weight: 400;
-      font-size: 15px;
-    }
-  
-    .socailMedia {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-    .socailMedia > a:nth-of-type(4) {
-      position: relative;
-      top: 0px;
-      left: 5px;
-    }
-    .accesibility {
-      width: 10%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-    }
-    .accesibility ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 0;
-    }
-    .accesibility ul li a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      color: #000000;
-    }
-    .Addresss {
-      width: 15%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-    }
-    .Addresss > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-    }
-    .Addresss > div > div {
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      text-align: center;
-    }
-    .mapPic {
-      width: 20%;
-    }
-    .mapPic > img {
-      width: 100%;
-    }
+
+  /*footer*/
+  #Footer {
+    margin-top: 50px;
+    padding: 20px 0px;
   }
-  
-  @media (min-width: 990px) and (max-width: 1200px) {
-    header {
-      width: 100%;
-      background-color: #ffffff;
-      height: 570px;
-    }
-    .wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .tHeader,
-    .nav_menu,
-    #Logo,
-    .bHeader {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      z-index: 9;
-    }
-    .tHeader {
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 15px;
-    }
-    #Logo {
-      position: relative;
-      right: 10px;
-    }
-    #LogoText {
-      width: 150px;
-      font-weight: 400;
-      font-size: 28px;
-      line-height: 40px;
-      position: relative;
-      font-family: VazirMatn;
-      right: 5px;
-      text-align: center;
-    }
-    #img_Logo > img {
-      width: 85px;
-    }
-    .nav {
-      display: flex !important;
-      justify-content: center;
-      align-self: center;
-      /* margin: 0 auto; */
-    }
-    .nav_menu {
-      /* width: 100%; */
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 20px;
-      position: relative;
-      /* left: 50px; */
-      list-style-type: none;
-    }
-    .nav_menu > li > a {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 100%;
-      text-decoration: none;
-      color: #000000;
-      font-family: VazirFDWOL;
-    }
-    #img_Logo_Semnan {
-      position: relative;
-      left: 10px;
-    }
-    .bHeader {
-      width: 100%;
-      /* gap: 50px; */
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: -30px;
-      flex-direction: row;
-      padding:80px 50px 0px 50px ;
-    }
-    .leftHeader img{
-      width: 400px;
-    }
-    .rightHeader{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        direction: rtl;
-        gap: 10px;
-        text-align: right;
-        position: relative;
-        top: -50px;
-        right: 15px;
-    }
-    .rightHeader h3,
-    .rightHeader div,
-    .rightHeader div b{
-        font-family: VazirFDWOL;
-        color: #000000;
-    }
 
-    .rightHeader h3{
-        font-weight: 400;
-      font-size: 26px;
-    }
-    
-    .rightHeader b{
-        font-weight: 700;
-      font-size: 32px;
-    }
-    
-    .rightHeader div{
-        font-weight: 400;
-      font-size: 17px;
-    }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 28%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+    font-weight: 800;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
 
-    .searchBox {
-        width: 100%;
-        height: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 50px;
-      }
-      
-      .search > span {
-        position: relative;
-        left: 15px;
-      }
-      .search > span img {
-        position: absolute;
-        left: 0px;
-        top: 3px;
-        z-index: 999;
-      }
-      .search input {
-        width: 430px;
-        height: 39px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #AF92EE;
-        border:1.5px solid #AF92EE;
-        border-radius: 28px;
-        position: relative;
-        right: 15px;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: VazirMatn;
-        direction: rtl;
-        color: #ffffff;
-        text-indent: 15px;
-        transition: all 300ms linear;
-      }
-      
-      input::placeholder {
-        color: #ffffff;
-        font-size: 18px;
-        font-weight: 400;
-        font-family: VazirMatn;
-      }
-      .search input:hover {
-        background-color: #ffffff;
-        border-color: #000000;
-        color: #000000;
-      }
-      .search input:hover::placeholder {
-        color: #000000;
-      }
-      .search:hover img {
-        content: url("../image/icon/search_icon_hover.svg");
-      }
-          /* main */
-    main {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0px 25px 25px 25px;
-      row-gap: 60px;
-    }
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 20%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
 
-    .partOne{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:center;
-      align-items: center;
-  gap: 25px;
-      flex-wrap: wrap;
-    }
-    .partOneTitle{
-      width: 100%;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: VazirFDWOL;
-      color: #000000;
-      text-align: center;
-    }
-    .Box{
-      width: 290px;
-      height: 388px;
-      box-shadow: 0px 4px 4px 0px #0000002E,0px 4px 16px 0px #00000029;
-      position: relative;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      direction: rtl;
-    }
-    .gradOne {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FFCFCF 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradSecond {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #CEEAF7 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradThird {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FEFFA8 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .Box div.pic{
-      width: 100%;
-      height: 272px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
+@media (min-width: 990px) and (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 570px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 10px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 5px;
+    text-align: center;
+  }
+  #img_Logo > img {
+    width: 85px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 10px;
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -30px;
+    flex-direction: row;
+    padding: 80px 50px 0px 50px;
+  }
+  .leftHeader img {
+    width: 400px;
+  }
+  .rightHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    direction: rtl;
+    gap: 10px;
+    text-align: right;
+    position: relative;
+    top: -50px;
+    right: 15px;
+  }
+  .rightHeader h3,
+  .rightHeader div,
+  .rightHeader div b {
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+
+  .rightHeader h3 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+
+  .rightHeader b {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .rightHeader div {
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .searchBox {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+
+  .search > span {
+    position: relative;
+    left: 15px;
+  }
+  .search > span img {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    z-index: 999;
+  }
+  .search input {
+    width: 430px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af92ee;
+    border: 1.5px solid #af92ee;
+    border-radius: 28px;
+    position: relative;
+    right: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirMatn;
+    direction: rtl;
+    color: #ffffff;
+    text-indent: 15px;
+    transition: all 300ms linear;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: VazirMatn;
+  }
+  .search input:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+  }
+  .search input:hover::placeholder {
+    color: #000000;
+  }
+  .search:hover img {
+    content: url("../image/icon/search_icon_hover.svg");
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px 25px 25px;
+    row-gap: 60px;
+  }
+
+  .partOne {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .partOneTitle {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .Box {
+    width: 290px;
+    height: 388px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 90%;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
   .Box div.pic img {
     position: relative;
     /* top: 30px; */
   }
-    .info{
-      width: 90%;
-      height: 116px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
+  .info {
+    width: 90%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
     top: 0px;
-    }
-  .nameCourses b{
+  }
+  .nameCourses b {
     font-size: 22px;
     font-weight: 700;
     font-family: inter;
     color: #000000;
     margin-left: 10px;
   }
-  .nameCourses span{
+  .nameCourses span {
     font-size: 11px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .startCourses{
+  .startCourses {
     font-size: 13px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .btnCoueses{
+  .btnCoueses {
     width: 140px;
     height: 32px;
     border-radius: 8px;
-    background-color: #AF92EE;
+    background-color: #af92ee;
     box-shadow: 0px 2px 2px 0px #00000029;
     display: flex;
     flex-direction: row-reverse;
@@ -797,450 +800,451 @@ background-color: #000000;
     transition: all 300ms linear;
     line-height: 32px;
   }
-  .btnCoueses a{
+  .btnCoueses a {
     color: white;
     font-size: 12px;
     font-weight: 400;
     font-family: VazirFDWOL;
     text-decoration: none;
   }
-  .btnCoueses img{
+  .btnCoueses img {
     position: relative;
     top: 5px;
   }
-  .btnCoueses:hover{
-background-color: #000000;
+  .btnCoueses:hover {
+    background-color: #000000;
   }
-  
-    /*footer*/
-  
-    #Footer {
-      padding: 20px 0px;
-      margin-top: 35px;
-    }
-  
-    .footer {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      border-radius: 6px;
-    }
-    .about {
-      width: 35%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .footerLogo > img {
-      width: 91px;
-    }
-    .aboutPara {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      direction: rtl;
-    }
-    .aboutPara > h3,
-    .aboutPara > p,
-    .accesibility > h3,
-    .Addresss > h3 {
-      font-family: VazirFDWOL;
-      font-size: 16px;
-      color: #000000;
-      text-align: justify;
-    }
-    .aboutPara > p {
-      font-weight: 400;
-      font-size: 15px;
-    }
-  
-    .socailMedia {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-    }
-    .socailMedia > a:nth-of-type(4) {
-      position: relative;
-      top: 0px;
-      left: 5px;
-    }
-    .accesibility {
-      width: 10%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .accesibility ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 3px;
-    }
-    .accesibility ul li a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      color: #000000;
-    }
-    .Addresss {
-      width: 26%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .Addresss > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-    }
-    .Addresss > div > div {
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      text-align: center;
-    }
-    .mapPic {
-      width: 25%;
-    }
-    .mapPic > img {
-      width: 100%;
-    }
+
+  /*footer*/
+
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 35px;
   }
-  
-  @media (min-width: 700px) and (max-width: 990px) {
-    header {
-      width: 100%;
-      background-color: #ffffff;
-      height: 450px;
-    }
-    .wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .tHeader,
-    .nav_menu,
-    #Logo,
-    .bHeader {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      z-index: 9;
-    }
-    .tHeader {
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 15px;
-    }
-    #Logo {
-      position: relative;
-      right: 0px;
-    }
-    #LogoText {
-      width: 150px;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 40px;
-      position: relative;
-      font-family: VazirMatn;
-      right: 0px;
-      text-align: center;
-      display: none;
-    }
-    #img_Logo > img {
-      width: 70px;
-    }
-    .nav {
-      display: flex !important;
-      justify-content: center;
-      align-self: center;
-      /* margin: 0 auto; */
-    }
-    .nav_menu {
-      /* width: 100%; */
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 25px;
-      position: relative;
-      /* left: 50px; */
-      list-style-type: none;
-    }
-    .nav_menu > li > a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 100%;
-      text-decoration: none;
-      color: #000000;
-      font-family: VazirFDWOL;
-      white-space: nowrap;
-    }
-    #img_Logo_Semnan {
-      position: relative;
-      left: 0px;
-    }
-    #img_Logo_Semnan > img {
-      transform: scale(0.7);
-    }
-    .bHeader {
-      width: 100%;
-      /* gap: 50px; */
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: 0px;
-      flex-direction: row;
-      padding: 30px 50px 0px 50px;
-    }
-    .leftHeader img{
-      width: 320px;
-    }
-    .rightHeader{
-      width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        direction: rtl;
-        gap: 10px;
-        text-align: right;
-        position: relative;
-        top: -50px;
-        right: 15px;
-    }
-    .rightHeader h3,
-    .rightHeader div,
-    .rightHeader div b{
-        font-family: VazirFDWOL;
-        color: #000000;
-    }
 
-    .rightHeader h3{
-        font-weight: 400;
-      font-size: 24px;
-    }
-    
-    .rightHeader b{
-        font-weight: 700;
-      font-size: 26px;
-    }
-    
-    .rightHeader div{
-        font-weight: 400;
-      font-size: 15px;
-    }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+  .about {
+    width: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footerLogo > img {
+    width: 91px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
 
-    .searchBox {
-        width: 100%;
-        height: 35px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 50px;
-      }
-      
-      .search > span {
-        position: relative;
-        left: 15px;
-      }
-      .search > span img {
-        position: absolute;
-        left: 0px;
-        top: 3px;
-        z-index: 999;
-        transform: scale(0.8);
-      }
-      .search input {
-        width:320px;
-        height: 39px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #AF92EE;
-        border:1.5px solid #AF92EE;
-        border-radius: 28px;
-        position: relative;
-        right: 15px;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: VazirMatn;
-        direction: rtl;
-        color: #ffffff;
-        text-indent: 15px;
-        transition: all 300ms linear;
-      }
-      
-      input::placeholder {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: VazirMatn;
-      }
-      .search input:hover {
-        background-color: #ffffff;
-        border-color: #000000;
-        color: #000000;
-      }
-      .search input:hover::placeholder {
-        color: #000000;
-      }
-      .search:hover img {
-        content: url("../image/icon/search_icon_hover.svg");
-      }
-          /* main */
-    main {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding:50px 25px;
-      row-gap: 50px;
-    }
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 25%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
 
-    .partOne{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:center;
-      align-items: center;
-  gap: 25px;
-      flex-wrap: wrap;
-    }
-    .partOneTitle{
-      width: 100%;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: VazirFDWOL;
-      color: #000000;
-      text-align: center;
-    }
-    .Box{
-      width: 190px;
-      height: 358px;
-      box-shadow: 0px 4px 4px 0px #0000002E,0px 4px 16px 0px #00000029;
-      position: relative;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      direction: rtl;
-    }
-    .gradOne {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FFCFCF 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradSecond {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #CEEAF7 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradThird {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FEFFA8 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .Box div.pic{
-      width: 100%;
-      height: 272px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
+@media (min-width: 700px) and (max-width: 990px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    height: 450px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    position: relative;
+    /* left: 50px; */
+    list-style-type: none;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: row;
+    padding: 30px 50px 0px 50px;
+  }
+  .leftHeader img {
+    width: 320px;
+  }
+  .rightHeader {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    direction: rtl;
+    gap: 10px;
+    text-align: right;
+    position: relative;
+    top: -50px;
+    right: 15px;
+  }
+  .rightHeader h3,
+  .rightHeader div,
+  .rightHeader div b {
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
 
-    .Box div.pic img{
-      position: relative;
-      /* top: 15px; */
-      transform: scale(0.7);
-    }
-    .info{
-      width: 90%;
-      height: 116px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
+  .rightHeader h3 {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .rightHeader b {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .rightHeader div {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .searchBox {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+  }
+
+  .search > span {
+    position: relative;
+    left: 15px;
+  }
+  .search > span img {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    z-index: 999;
+    transform: scale(0.8);
+  }
+  .search input {
+    width: 320px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af92ee;
+    border: 1.5px solid #af92ee;
+    border-radius: 28px;
+    position: relative;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirMatn;
+    direction: rtl;
+    color: #ffffff;
+    text-indent: 15px;
+    transition: all 300ms linear;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirMatn;
+  }
+  .search input:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+  }
+  .search input:hover::placeholder {
+    color: #000000;
+  }
+  .search:hover img {
+    content: url("../image/icon/search_icon_hover.svg");
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 25px;
+    row-gap: 50px;
+  }
+
+  .partOne {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .partOneTitle {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .Box {
+    width: 190px;
+    height: 358px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 90%;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .Box div.pic img {
+    position: relative;
+    /* top: 15px; */
+    /* transform: scale(0.7); */
+  }
+  .info {
+    width: 90%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
     top: -10px;
-    }
-  .nameCourses b{
+  }
+  .nameCourses b {
     font-size: 20px;
     font-weight: 700;
     font-family: inter;
     color: #000000;
     margin-left: 10px;
   }
-  .nameCourses span{
+  .nameCourses span {
     font-size: 11px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .startCourses{
+  .startCourses {
     font-size: 12px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .btnCoueses{
+  .btnCoueses {
     width: 140px;
     height: 32px;
     border-radius: 8px;
-    background-color: #AF92EE;
+    background-color: #af92ee;
     box-shadow: 0px 2px 2px 0px #00000029;
     display: flex;
     flex-direction: row-reverse;
@@ -1252,447 +1256,456 @@ background-color: #000000;
     transition: all 300ms linear;
     line-height: 32px;
   }
-  .btnCoueses a{
+  .btnCoueses a {
     color: white;
     font-size: 11px;
     font-weight: 400;
     font-family: VazirFDWOL;
     text-decoration: none;
   }
-  .btnCoueses img{
+  .btnCoueses img {
     position: relative;
     top: 5px;
     transform: scale(0.8);
   }
-  .btnCoueses:hover{
-background-color: #000000;
+  .btnCoueses:hover {
+    background-color: #000000;
   }
-    /*footer*/
-    
-    #Footer {
-      padding: 20px 0px;
-      margin-top: 30px;
-    }
-  
-    .footer {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      border-radius: 6px;
-    }
-    .about {
-      width: 45%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 5px;
-    }
-    .footerLogo > img {
-      width: 75px;
-    }
-    .aboutPara {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      direction: rtl;
-    }
-    .aboutPara > h3,
-    .aboutPara > p,
-    .accesibility > h3,
-    .Addresss > h3 {
-      font-family: VazirFDWOL;
-      font-size: 16px;
-      color: #000000;
-      text-align: justify;
-    }
-    .aboutPara > p {
-      font-weight: 400;
-      font-size: 15px;
-    }
-  
-    .socailMedia {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-    }
-    .socailMedia > a:nth-of-type(4) {
-      position: relative;
-      top: 0px;
-      left: 5px;
-    }
-    .accesibility {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .accesibility ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-    }
-    .accesibility ul li a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      color: #000000;
-    }
-    .Addresss {
-      width: 45%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 50px;
-      gap: 10px;
-    }
-    .Addresss > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-    }
-    .Addresss > div > div {
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      text-align: center;
-    }
-    .mapPic {
-      width: 45%;
-      margin-top: 50px;
-    }
-    .mapPic > img {
-      width: 100%;
-    }
+  /*footer*/
+
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 30px;
   }
-  @media (min-width: 560px) and (max-width: 699px) {
-    header {
-      width: 100%;
-      background-color: #ffffff;
-      /* height: 800px; */
-    }
-    .wrapper {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .tHeader,
-    .nav_menu,
-    #Logo,
-    .bHeader {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      z-index: 9;
-    }
-    .tHeader {
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 15px;
-    }
-    #Logo {
-      position: relative;
-      right: 0px;
-    }
-    #LogoText {
-      width: 150px;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 40px;
-      position: relative;
-      font-family: VazirMatn;
-      right: 0px;
-      text-align: center;
-      display: none;
-    }
-    #img_Logo > img {
-      width: 70px;
-    }
-    .nav {
-      display: flex !important;
-      justify-content: center;
-      align-self: center;
-      /* margin: 0 auto; */
-    }
-    .nav_menu {
-      width: 90%;
-      gap: 10px;
-      position: relative;
-      right: 30px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-    }
-    .nav_menu > li > a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 100%;
-      text-decoration: none;
-      color: #000000;
-      font-family: VazirFDWOL;
-      white-space: nowrap;
-    }
-    #img_Logo_Semnan {
-      position: relative;
-      left: 0px;
-    }
-    #img_Logo_Semnan > img {
-      transform: scale(0.7);
-    }
-    .bHeader {
-      width: 100%;
-      /* gap: 50px; */
-      justify-content: space-evenly;
-      align-items: center;
-      margin-bottom: 30px;
-      flex-direction: column;
-    }
-    .leftHeader{
-      margin-top: -50px;
-    }
-    .leftHeader img{
-      width: 320px;
-    }
-    .rightHeader{
-      width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        direction: rtl;
-        gap: 10px;
-        text-align: right;
-        position: relative;
-        top: -50px;
-        right: 15px;
-    }
-    .rightHeader h3,
-    .rightHeader div,
-    .rightHeader div b{
-        font-family: VazirFDWOL;
-        color: #000000;
-    }
 
-    .rightHeader h3{
-        font-weight: 400;
-      font-size: 22px;
-    }
-    
-    .rightHeader b{
-        font-weight: 700;
-      font-size: 25px;
-    }
-    
-    .rightHeader div{
-        font-weight: 400;
-      font-size: 14px;
-    }
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+  }
+  .about {
+    width: 45%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
 
-    .searchBox {
-        width: 100%;
-        height: 35px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        top: 30px;
-      }
-      
-      .search > span {
-        position: relative;
-        left: 15px;
-      }
-      .search > span img {
-        position: absolute;
-        left: 0px;
-        top: 3px;
-        z-index: 999;
-        transform: scale(0.8);
-      }
-      .search input {
-        width:450px;
-        height: 39px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #AF92EE;
-        border:1.5px solid #AF92EE;
-        border-radius: 28px;
-        position: relative;
-        right: 15px;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: VazirMatn;
-        direction: rtl;
-        color: #ffffff;
-        text-indent: 15px;
-        transition: all 300ms linear;
-      }
-      
-      input::placeholder {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: VazirMatn;
-      }
-      .search input:hover {
-        background-color: #ffffff;
-        border-color: #000000;
-        color: #000000;
-      }
-      .search input:hover::placeholder {
-        color: #000000;
-      }
-      .search:hover img {
-        content: url("../image/icon/search_icon_hover.svg");
-      }
-          /* main */
-    main {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-      row-gap: 60px;
-    }
-
-    .partOne{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:center;
-      align-items: center;
-  gap: 25px;
-      flex-wrap: wrap;
-    }
-    .partOneTitle{
-      width: 100%;
-      font-size: 24px;
-      font-weight: 400;
-      font-family: VazirFDWOL;
-      color: #000000;
-      text-align: center;
-    }
-    .Box{
-      width: 220px;
-      height: 358px;
-      box-shadow: 0px 4px 4px 0px #0000002E,0px 4px 16px 0px #00000029;
-      position: relative;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      direction: rtl;
-    }
-    .gradOne {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FFCFCF 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradSecond {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #CEEAF7 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradThird {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FEFFA8 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .Box div.pic img{
-      position: relative;
-      top: 15px;
-      transform: scale(0.7);
-    }
-    .info{
-      width: 90%;
-      height: 116px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
     top: 0px;
-    }
-  .nameCourses b{
+    left: 5px;
+  }
+  .accesibility {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 45%;
+    margin-top: 50px;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+@media (min-width: 560px) and (max-width: 699px) {
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    /* height: 800px; */
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .tHeader,
+  .nav_menu,
+  #Logo,
+  .bHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+  }
+  .tHeader {
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  #Logo {
+    position: relative;
+    right: 0px;
+  }
+  #LogoText {
+    width: 150px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    position: relative;
+    font-family: VazirMatn;
+    right: 0px;
+    text-align: center;
+    display: none;
+  }
+  #img_Logo > img {
+    width: 70px;
+  }
+  .nav {
+    display: flex !important;
+    justify-content: center;
+    align-self: center;
+    /* margin: 0 auto; */
+  }
+  .nav_menu {
+    width: 90%;
+    gap: 10px;
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .nav_menu > li > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: #000000;
+    font-family: VazirFDWOL;
+    white-space: nowrap;
+  }
+  #img_Logo_Semnan {
+    position: relative;
+    left: 0px;
+  }
+  #img_Logo_Semnan > img {
+    transform: scale(0.7);
+  }
+  .bHeader {
+    width: 100%;
+    /* gap: 50px; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .leftHeader {
+    margin-top: -50px;
+  }
+  .leftHeader img {
+    width: 320px;
+  }
+  .rightHeader {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    direction: rtl;
+    gap: 10px;
+    text-align: right;
+    position: relative;
+    top: -50px;
+    right: 15px;
+  }
+  .rightHeader h3,
+  .rightHeader div,
+  .rightHeader div b {
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+
+  .rightHeader h3 {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .rightHeader b {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .rightHeader div {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .searchBox {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+  }
+
+  .search > span {
+    position: relative;
+    left: 15px;
+  }
+  .search > span img {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    z-index: 999;
+    transform: scale(0.8);
+  }
+  .search input {
+    width: 450px;
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af92ee;
+    border: 1.5px solid #af92ee;
+    border-radius: 28px;
+    position: relative;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirMatn;
+    direction: rtl;
+    color: #ffffff;
+    text-indent: 15px;
+    transition: all 300ms linear;
+  }
+
+  input::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirMatn;
+  }
+  .search input:hover {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+  }
+  .search input:hover::placeholder {
+    color: #000000;
+  }
+  .search:hover img {
+    content: url("../image/icon/search_icon_hover.svg");
+  }
+  /* main */
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    row-gap: 60px;
+  }
+
+  .partOne {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .partOneTitle {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .Box {
+    width: 220px;
+    height: 358px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+    .Box div.pic {
+      width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        overflow: hidden;
+  }
+  .Box div.pic img {
+    position: relative;
+    top: 15px;
+    /* transform: scale(0.7); */
+  }
+  .info {
+    width: 90%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 0px;
+  }
+  .nameCourses b {
     font-size: 20px;
     font-weight: 700;
     font-family: inter;
     color: #000000;
     margin-left: 5px;
   }
-  .nameCourses span{
+  .nameCourses span {
     font-size: 11px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .startCourses{
+  .startCourses {
     font-size: 12px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .btnCoueses{
+  .btnCoueses {
     width: 140px;
     height: 32px;
     border-radius: 8px;
-    background-color: #AF92EE;
+    background-color: #af92ee;
     box-shadow: 0px 2px 2px 0px #00000029;
     display: flex;
     flex-direction: row-reverse;
@@ -1704,136 +1717,136 @@ background-color: #000000;
     transition: all 300ms linear;
     line-height: 32px;
   }
-  .btnCoueses a{
+  .btnCoueses a {
     color: white;
     font-size: 11px;
     font-weight: 400;
     font-family: VazirFDWOL;
     text-decoration: none;
   }
-  .btnCoueses img{
+  .btnCoueses img {
     position: relative;
     top: 5px;
     transform: scale(0.8);
   }
-  .btnCoueses:hover{
-background-color: #000000;
+  .btnCoueses:hover {
+    background-color: #000000;
   }
-    /*footer*/
-    #Footer {
-      padding: 20px 0px;
-      margin-top: 0px;
-    }
-  
-    .footer {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      border-radius: 6px;
-      padding: 0 50px;
-      gap: 35px;
-    }
-    .about {
-      width: 92%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: flex-start;
-      align-items: flex-start;
-      gap: 5px;
-    }
-    .footerLogo > img {
-      width: 75px;
-    }
-    .aboutPara {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      direction: rtl;
-    }
-    .aboutPara > h3,
-    .aboutPara > p,
-    .accesibility > h3,
-    .Addresss > h3 {
-      font-family: VazirFDWOL;
-      font-size: 16px;
-      color: #000000;
-      text-align: justify;
-    }
-    .aboutPara > p {
-      font-weight: 400;
-      font-size: 15px;
-    }
-  
-    .socailMedia {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      position: relative;
-      /* left: 35px; */
-      margin-top: 20px;
-    }
-    .socailMedia > a:nth-of-type(4) {
-      position: relative;
-      top: 0px;
-      left: 5px;
-    }
-    .accesibility {
-      width: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .accesibility ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-    }
-    .accesibility ul li a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      color: #000000;
-    }
-    .Addresss {
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    .Addresss > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0px;
-    }
-    .Addresss > div > div {
-      font-weight: 400;
-      font-size: 16px;
-      font-family: VazirFDWOL;
-      text-align: center;
-    }
-    .mapPic {
-      width: 85%;
-    }
-    .mapPic > img {
-      width: 100%;
-    }
+  /*footer*/
+  #Footer {
+    padding: 20px 0px;
+    margin-top: 0px;
   }
-  
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-radius: 6px;
+    padding: 0 50px;
+    gap: 35px;
+  }
+  .about {
+    width: 92%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .footerLogo > img {
+    width: 75px;
+  }
+  .aboutPara {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    direction: rtl;
+  }
+  .aboutPara > h3,
+  .aboutPara > p,
+  .accesibility > h3,
+  .Addresss > h3 {
+    font-family: VazirFDWOL;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+  }
+  .aboutPara > p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .socailMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    /* left: 35px; */
+    margin-top: 20px;
+  }
+  .socailMedia > a:nth-of-type(4) {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+  .accesibility {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .accesibility ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .accesibility ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
+  .Addresss {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .Addresss > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+  .Addresss > div > div {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: VazirFDWOL;
+    text-align: center;
+  }
+  .mapPic {
+    width: 85%;
+  }
+  .mapPic > img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 560px) {
   body {
     overflow-x: hidden;
@@ -1883,7 +1896,7 @@ background-color: #000000;
     display: none;
     width: 70%;
     font-weight: 400;
-    font-size:17px;
+    font-size: 17px;
     white-space: nowrap;
     line-height: 40px;
     position: relative;
@@ -1897,13 +1910,13 @@ background-color: #000000;
     position: relative;
     right: 7px;
   }
-  .menuCellphone{
+  .menuCellphone {
     display: inline-block !important;
     position: relative;
     top: 0px;
-    right:0px;
+    right: 0px;
   }
-  .menuCellphone img{
+  .menuCellphone img {
     width: 20px;
   }
   .nav {
@@ -1921,7 +1934,7 @@ background-color: #000000;
   .nav_menu {
     width: 271px;
     background-color: rgb(255, 255, 255);
-    border-top-left-radius:24px;
+    border-top-left-radius: 24px;
     height: 100vh;
     /* width: 90%; */
     gap: 18px;
@@ -1935,19 +1948,19 @@ background-color: #000000;
     align-items: center;
     flex-wrap: wrap;
   }
-  .nav_menu .closeGre{
+  .nav_menu .closeGre {
     display: block !important;
     margin-top: 30px;
     margin-bottom: 0px;
   }
-  .nav_menu .closeGre span{
-    color: #9AC817;
+  .nav_menu .closeGre span {
+    color: #9ac817;
     font-size: 20px;
     font-weight: 700;
     font-family: VazirFDWOL;
     margin-left: 15px;
   }
-  .nav_menu .closeGre img{
+  .nav_menu .closeGre img {
     position: relative;
     right: 15px;
     top: 4px;
@@ -1961,17 +1974,17 @@ background-color: #000000;
     font-size: 14px;
     line-height: 100%;
     text-decoration: none;
-    color: #1B198F;
+    color: #1b198f;
     font-family: VazirFDWOL;
     white-space: nowrap;
   }
-  .downIMG{
+  .downIMG {
     display: block !important;
-        position: absolute;
+    position: absolute;
     bottom: 10px;
     width: 250px;
   }
-  #LogoSemnan{
+  #LogoSemnan {
     width: 24%;
   }
   #img_Logo_Semnan {
@@ -1982,69 +1995,68 @@ background-color: #000000;
     width: 40px;
   }
 
-  .bHeader{
+  .bHeader {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-      justify-content: space-evenly;
-      margin-bottom: 30px;
-    }
-    .leftHeader{
-      order: 3;
-      margin-top: -50px;
-      position: relative;
-      top: -120px;
-    }
-    .leftHeader img{
-      width: 320px;
-    }
-    .rightHeader{
-      order: 2;
-      width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        direction: rtl;
-        gap: 10px;
-        text-align: right;
-        position: relative;
-        top: 10px;
-    }
-    .rightHeader h3,
-    .rightHeader div,
-    .rightHeader div b{
-        font-family: VazirFDWOL;
-        color: #000000;
-    }
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
+  .leftHeader {
+    order: 3;
+    margin-top: -50px;
+    position: relative;
+    top: -120px;
+  }
+  .leftHeader img {
+    width: 320px;
+  }
+  .rightHeader {
+    order: 2;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    gap: 10px;
+    text-align: right;
+    position: relative;
+    top: 10px;
+  }
+  .rightHeader h3,
+  .rightHeader div,
+  .rightHeader div b {
+    font-family: VazirFDWOL;
+    color: #000000;
+  }
 
-    .rightHeader h3{
-        font-weight: 400;
-      font-size: 18px;
-    }
-    
-    .rightHeader b{
-        font-weight: 700;
-      font-size: 25px;
-    
-    }
-    
-    .rightHeader div{
-        font-weight: 400;
-      font-size: 14px;
-    }
-.pos{
-  width: 100%;
-  position: relative;
-  top: 250px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
+  .rightHeader h3 {
+    font-weight: 400;
+    font-size: 18px;
+  }
 
-.searchBox {
+  .rightHeader b {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .rightHeader div {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .pos {
+    width: 100%;
+    position: relative;
+    top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .searchBox {
     width: 100%;
     height: 40px;
     display: flex;
@@ -2053,7 +2065,8 @@ background-color: #000000;
     align-items: center;
     position: relative;
     top: -20px;
-    order: 1;position: relative;
+    order: 1;
+    position: relative;
     top: 250px;
   }
 
@@ -2075,8 +2088,8 @@ background-color: #000000;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #AF92EE;
-        border:1.5px solid #AF92EE;
+    background-color: #af92ee;
+    border: 1.5px solid #af92ee;
     border-radius: 28px;
     position: relative;
     right: 15px;
@@ -2105,142 +2118,144 @@ background-color: #000000;
   .search:hover img {
     content: url("../image/icon/search_icon_hover.svg");
   }
- main {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      row-gap: 60px;
-    }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 60px;
+  }
 
-    .partOne{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content:center;
-      align-items: center;
-  gap: 10px;
-      flex-wrap: wrap;
-    }
-    .partOneTitle{
-      width: 100%;
-      font-size: 14px;
-      font-weight: 400;
-      font-family: VazirFDWOL;
-      color: #000000;
-      text-align: center;
-    }
-    .Box{
-      width:47%;
-      height: 358px;
-      box-shadow: 0px 4px 4px 0px #0000002E,0px 4px 16px 0px #00000029;
-      position: relative;
-      border-radius: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      direction: rtl;
-    }
-    .gradOne {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FFCFCF 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradSecond {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #CEEAF7 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .gradThird {
-      width: 100%;
-      height:272px;
-      background: #ffffff;
-      background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 1) 0%,
-        #FEFFA8 50%,
-        rgba(255, 255, 255, 1) 100%
-      );
-      position: absolute;
-      top: 10px;
-      left: 0;
-      z-index: -1;
-    }
-    .Box div.pic{
-      height: 200px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-    .Box div.pic img{
-      width: 100%;
-      position: relative;
-    }
-    .info{
-      width: 90%;
-      height: 116px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+  .partOne {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .partOneTitle {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: VazirFDWOL;
+    color: #000000;
+    text-align: center;
+  }
+  .Box {
+    width: 47%;
+    height: 358px;
+    box-shadow: 0px 4px 4px 0px #0000002e, 0px 4px 16px 0px #00000029;
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    direction: rtl;
+  }
+  .gradOne {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ffcfcf 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradSecond {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #ceeaf7 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .gradThird {
+    width: 100%;
+    height: 272px;
+    background: #ffffff;
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      #feffa8 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: -1;
+  }
+  .Box div.pic {
+    width: 95%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        overflow: hidden;
+  }
+  .Box div.pic img {
+    width: 100%;
+    position: relative;
+  }
+  .info {
+    width: 90%;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     top: -4px;
-    }
-    .nameCourses{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-    }
-  .nameCourses b{
-    font-size:14px;
+  }
+  .nameCourses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .nameCourses b {
+    font-size: 14px;
     font-weight: 700;
     font-family: inter, VazirFDWOL;
     color: #000000;
     margin-left: 5px;
   }
-  .nameCourses span{
+  .nameCourses span {
     font-size: 10px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .startCourses{
+  .startCourses {
     font-size: 10px;
     font-weight: 400;
     font-family: VazirFDWOL;
     color: #000000;
   }
-  .btnCoueses{
+  .btnCoueses {
     width: 140px;
     height: 32px;
     border-radius: 8px;
-    background-color: #AF92EE;
+    background-color: #af92ee;
     box-shadow: 0px 2px 2px 0px #00000029;
     display: flex;
     flex-direction: row-reverse;
@@ -2252,20 +2267,20 @@ background-color: #000000;
     transition: all 300ms linear;
     line-height: 32px;
   }
-  .btnCoueses a{
+  .btnCoueses a {
     color: white;
     font-size: 10px;
     font-weight: 400;
     font-family: VazirFDWOL;
     text-decoration: none;
   }
-  .btnCoueses img{
+  .btnCoueses img {
     position: relative;
     top: 5px;
     transform: scale(0.8);
   }
-  .btnCoueses:hover{
-background-color: #000000;
+  .btnCoueses:hover {
+    background-color: #000000;
   }
   /*S_footer*/
   #Footer {
@@ -2282,7 +2297,7 @@ background-color: #000000;
     border-radius: 6px;
     padding: 0 15px;
     gap: 10px;
-     position: relative;
+    position: relative;
   }
   .about {
     width: 98%;
@@ -2291,7 +2306,6 @@ background-color: #000000;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
-   
   }
   .footerLogo > img {
     width: 75px;
@@ -2302,7 +2316,7 @@ background-color: #000000;
     gap: 5px;
     direction: rtl;
   }
-  .aboutPara > h3{
+  .aboutPara > h3 {
     display: none;
   }
   .aboutPara > p,
@@ -2335,10 +2349,10 @@ background-color: #000000;
     top: 0px;
     left: 5px;
   }
-  .socailMedia>a>img{
+  .socailMedia > a > img {
     width: 27px;
   }
-  .socailMedia>a:nth-of-type(4)>img{
+  .socailMedia > a:nth-of-type(4) > img {
     width: 34px;
   }
   .accesibility {
@@ -2348,9 +2362,9 @@ background-color: #000000;
     align-items: center;
     justify-content: center;
   }
-   .accesibility h3{
+  .accesibility h3 {
     display: none;
-   }
+  }
   .accesibility ul {
     width: 100%;
     list-style-type: none;
@@ -2368,7 +2382,7 @@ background-color: #000000;
     font-weight: 500;
     font-size: 12px;
     font-family: VazirFDWOL;
-    color: #1B198F;
+    color: #1b198f;
   }
   .Addresss {
     width: 100%;
@@ -2378,12 +2392,11 @@ background-color: #000000;
     justify-content: center;
     gap: 10px;
   }
-   .Addresss > h3{
+  .Addresss > h3 {
     width: 95%;
     text-align: right;
     font-weight: 700;
-
-   }
+  }
   .Addresss > div {
     width: 95%;
     display: flex;
@@ -2400,7 +2413,7 @@ background-color: #000000;
     font-family: VazirFDWOL;
     text-align: right;
   }
-  .NumAddresss{
+  .NumAddresss {
     width: 100%;
     align-self: start;
     text-align: right !important;
@@ -2408,7 +2421,7 @@ background-color: #000000;
   .mapPic {
     width: 100%;
   }
-  .mapPic  img {
+  .mapPic img {
     width: 50%;
   }
   /*E_footer*/

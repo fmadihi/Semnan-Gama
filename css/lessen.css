@@ -208,6 +208,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .Box div.pic img {
     position: relative;
@@ -911,12 +912,13 @@ gap: 30px;
     z-index: -1;
   }
   .Box div.pic {
-    width: 100%;
+    width: 95%;
     height: 272px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .Box div.pic img {
     position: relative;
@@ -1632,13 +1634,14 @@ gap: 30px;
     z-index: -1;
   }
   .Box div.pic {
-    width: 80%;
+    width: 95%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
+    overflow: hidden;
   }
   .Box div.pic img {
     position: relative;
@@ -2378,13 +2381,14 @@ gap: 30px;
     z-index: -1;
   }
   .Box div.pic {
-    width: 80%;
+    width: 95%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
+    overflow: hidden;
   }
   .Box div.pic img {
     position: relative;
@@ -3192,13 +3196,14 @@ gap: 30px;
     z-index: -1;
   }
   .Box div.pic {
-    width: 80%;
+    width: 95%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    transform: scale(0.6);
+    /* transform: scale(0.6); */
+    overflow: hidden;
   }
   .Box div.pic img {
     position: relative;
@@ -3533,10 +3538,11 @@ gap: 30px;
     align-items: center;
     background-color: #f3f3f3;
     border-radius: 6px;
-    background-image: url(../image/comment01.svg);
+     background-image: url(../image/comment01.svg),url(../image/comment01.svg);
     background-repeat: repeat-x;
-    background-position: 28px 3px;
-    background-size: 100px auto;
+    background-position: 28px 3px,0px 180px;
+    background-size: 120px auto,120px auto;
+    background-repeat: repeat-x,repeat-x;
   }
   .leftImage,
   .rightImage {

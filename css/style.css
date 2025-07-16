@@ -549,18 +549,18 @@ height: 86px;
     z-index: 0;
   }
   .Box div.pic {
-    width: 100%;
+    width: 90%;
     height: 272px;
     display: flex;
     overflow: hidden;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    /* padding: 10px; */
   }
   .Box div.pic img {
     position: relative;
-    width: 90%;
+    /* width: 95%; */
     /* top: 30px; */
   }
   .info {
@@ -1281,7 +1281,7 @@ height: 86px;
     z-index: 0;
   }
   .Box div.pic {
-    width: 100%;
+    width: 95%;
     height: 272px;
     overflow: hidden;
     display: flex;
@@ -1292,7 +1292,7 @@ height: 86px;
   .Box div.pic img {
     position: relative;
     /* top: 30px; */
-    width: 90%;
+    width: 100%;
   }
   .info {
     width: 90%;
@@ -2037,7 +2037,7 @@ font-size: 15px;
     z-index: 0;
   }
   .Box div.pic {
-    width: 100%;
+    width: 90%;
     height: 180px;
     overflow: hidden;
     display: flex;
@@ -2821,7 +2821,7 @@ font-size: 15px;
   .Box div.pic img {
     position: relative;
     width: 90%;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
   }
   .info {
     width: 90%;
@@ -3686,18 +3686,19 @@ font-size: 12px;
   }
   /* python manage.py runserver */
   .Box div.pic {
-    width: 100%;
+    width: 95%;
     height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
   .Box div.pic img {
     width: 95%;
     position: relative;
     top: 0px;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
   }
   .info {
     width: 90%;
@@ -3744,11 +3745,12 @@ font-size: 12px;
     transition: all 300ms linear;
     line-height: 15px;
     text-align: center;
+    columns: #ffffff !important;
   }
   .btnCoueses a {
     width: inherit;
     height: inherit;
-    color: white;
+    color: white !important;
     font-size: 8px;
     font-weight: 400;
     font-family: VazirFDWOL;
