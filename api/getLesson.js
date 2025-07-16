@@ -63,7 +63,7 @@ $(function () {
     $(".info_title02").text(depName || "بدون دسته‌بندی");
   }
 
-  showDepartmentName();
+  // showDepartmentName();
 
   //سر فصل ها
   let courseId = courseData.id;
@@ -178,7 +178,6 @@ function getPersianMonthName(dateStringSend) {
   }
   // استفاده از تابع
   const courseStartDate = courseData.course_start_date; // تاریخ شمسی
-console.log('1',courseStartDate)
   const formattedDate = getPersianMonthName(courseStartDate);
 
   $(".start_lessen").text("شروع دوره: " + formattedDate);
@@ -198,7 +197,6 @@ console.log('1',courseStartDate)
       }
 
       const data = await response.json();
-      console.log(data)
       depart = data;
     } catch (error) {
       document.getElementById(
@@ -211,14 +209,9 @@ console.log('1',courseStartDate)
     const e = depart.find((d) => d.id === id);
     return e ? e.department_name : "نامشخص";
   }
-  async function getdata() {
-    await getFetchDeparteman();
-    await getFetchLessen();
-    await getFetchHead();
-  }
-  getdata();
 
-  function startCountdown(startDate) {
+
+ async function startCountdown(startDate) {
     const countdownElement = $(".start_time_show");
 
     function updateTimer() {
@@ -244,6 +237,7 @@ console.log('1',courseStartDate)
       const formattedDate = formatter.format(now);
 
       const d = formattedDate.split("/");
+
       const d2 = d[2].split(",");
       var maind = d[0] + "-" + d[1] + "-" + d2[0] + "T" + d2[1] + "+0000";
       let x = maind.split(" ");
@@ -251,7 +245,7 @@ console.log('1',courseStartDate)
 
       const diff = new Date(startDate) - new Date(maindata); // میلی‌ثانیه
       if (diff <= 0) {
-        countdownElement.text("");
+        countdownElement.text("شروع شده");
         clearInterval(timer);
         return;
       }
@@ -260,12 +254,18 @@ console.log('1',courseStartDate)
       const hours = Math.floor(diff / (1000 * 60 * 60));
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
       countdownElement.text(`${hours}:${minutes}:${seconds}`);
     }
 
     updateTimer(); // برای بار اول بدون تأخیر نمایش بده
     timer = setInterval(updateTimer, 1000);
   }
-  startCountdown(courseData.created_at);
+    async function getdata() {
+    await showDepartmentName();
+    await getFetchDeparteman();
+    await getFetchLessen();
+    await getFetchHead();
+    await startCountdown(courseData.course_start_date);
+  }
+  getdata();
 });
