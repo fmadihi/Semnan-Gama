@@ -79,7 +79,7 @@
                   <img src="../image/lesson/off.png" alt="" />
                 </div>
                 <div class="star Boxstar" style="display: none;">
-                  <img src="../image/lesson/star.png" alt="" />
+                  <img src="../image/lesson/star-alt-svgrepo-com.svg" alt="" width="50"/>
                   <div class="star_rate">3.9</div>
                 </div>
               </div>
@@ -88,7 +88,7 @@
                 <div class="info_title02">کودک و نوجوان</div>
                 <div class="start_lessen">شروع دوره: 12 اردیبهشت 1404</div>
                 <div class="star">
-                  <img src="../image/lesson/star.png" alt="" />
+                  <img src="../image/lesson/star-alt-svgrepo-com.svg" alt="" width="50" />
                   <div class="star_rate">3.9</div>
                 </div>
                 <div class="start_time">
@@ -271,8 +271,15 @@
           >
         </div>
       </div>
-    </main>
 
+      
+    </main>
+<!-- sIgnIn btn -->
+      <div>
+  <div>
+    <a href="#Comment" class="btn-register" id="btnRegister">ثبت نام</a>
+  </div>
+</div>
     <!-- E_main -->
     <!-- S_footer -->
     <div id="Footer">
@@ -287,12 +294,21 @@
               آموزش کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات مون لذت ببریم.
             </p>
             <div class="socailMedia">
-              <a href=""><img src="../image/footer/telegram.svg" alt="" /></a>
+              <!-- <a href=""><img src="../image/footer/telegram.svg" alt="" /></a>
               <a href=""
                 ><img src="../image/footer/linkedin-logo 1.svg" alt=""
               /></a>
               <a href=""><img src="../image/footer/facebook.svg" alt="" /></a>
-              <a href=""><img src="../image/footer/instagram.svg" alt="" /></a>
+              <a href=""><img src="../image/footer/instagram.svg" alt="" /></a> -->
+              <a href="https://t.me/Mft_semnan" target="_blank">
+                <img src="../image/footer/telegram.svg" alt="Telegram" />
+              </a>
+              <a href="https://instagram.com/mft.semnan" target="_blank">
+                <img src="../image/footer/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="https://eitaa.com/09035854465" target="_blank">
+                <img src="../image/footer/eitaa-icon-black.svg" alt="Eitaa" width="36"/>
+                           </a>
             </div>
           </div>
         </div>
@@ -349,7 +365,16 @@
     <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <script src="../api/getLesson.js"></script>
     <script src="../js/main.js"></script>
+<script>
+  document.getElementById('btnRegister').addEventListener('click', function(e) {
+    e.preventDefault();  // جلوی اسکرول پیش‌فرض رو می‌گیره
+    const element = document.getElementById('Comment');
+    const yOffset = -100;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+</script>
     <!-- window.addEventListener('load', () => {
   const oneDiv = document.querySelector('.one');
   const innerDiv = oneDiv.querySelector('div');
