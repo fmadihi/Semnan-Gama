@@ -305,24 +305,24 @@
             <div class="slider-track" id="sliderTrack">
               <!-- 10 آیتم -->
               <!-- <div class="Box slide">
-              <div class="gradOne"></div>
-              <div class="pic">
-                <img src="./image/courses/Autodesk.svg" alt="" />
-              </div>
-              <div class="info">
-                <div class="nameCourses">
-                  <b>AUTOCAD </b><span>فناوری اطلاعات</span>
-                  <div class="startCourses">شروع دوره: 12 اردیبهشت 1404</div>
+                <div class="gradOne"></div>
+                <div class="pic">
+                  <img src="./image/courses/Autodesk.svg" alt="" />
                 </div>
+                <div class="info">
+                  <div class="nameCourses">
+                    <b>AUTOCAD </b><span>فناوری اطلاعات</span>
+                    <div class="startCourses">شروع دوره: 12 اردیبهشت 1404</div>
+                  </div>
 
-                <div class="btnCoueses">
-                  <div>
-                    <a href="">مشاهده اطلاعات</a
-                    ><img src="../image/courses/arrow-left 1.svg" alt="" />
+                  <div class="btnCoueses">
+                    <div>
+                      <a href="">مشاهده اطلاعات</a
+                      ><img src="../image/courses/arrow-left 1.svg" alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div> -->
+              </div> -->
             </div>
           </div>
         </div>
@@ -418,12 +418,28 @@
               آموزش کنارت هستیم تا باهم رشد کنیم و از نتیجه زحمات مون لذت ببریم.
             </p>
             <div class="socailMedia">
-              <a href=""><img src="./image/footer/telegram.svg" alt="" /></a>
-              <a href=""
+              <a href="https://t.me/Mft_semnan" target="_blank">
+                <img src="./image/footer/telegram.svg" alt="Telegram" />
+              </a>
+              <a href="https://instagram.com/mft.semnan" target="_blank">
+                <img src="./image/footer/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="https://eitaa.com/09035854465" target="_blank">
+                <img
+                  src="./image/footer/eitaa-icon-black.svg"
+                  alt="Eitaa"
+                  width="36"
+                />
+              </a>
+              <!-- <a href=""
                 ><img src="./image/footer/linkedin-logo 1.svg" alt=""
-              /></a>
-              <a href=""><img src="./image/footer/facebook.svg" alt="" /></a>
-              <a href=""><img src="./image/footer/instagram.svg" alt="" /></a>
+              /></a> -->
+              <!-- <a href=""><img src="./image/footer/facebook.svg" alt="" /></a> -->
+              <!-- <a href=""><img src="./image/footer/instagram.svg" alt="" /></a> -->
+
+              <!-- <a href="https://wa.me/09035854465" target="_blank">
+                <img src="./image/footer/whatsapp.svg" alt="WhatsApp" />
+              </a> -->
             </div>
           </div>
         </div>
@@ -476,7 +492,9 @@
     <script src="./api/getSliderApi.js"></script>
     <script src="./api/postComment.js"></script>
     <script src="./api/getMain.js"></script>
+    <!-- hoverc category -->
     <script src="./main.js"></script>
+    <!-- menu cellphone -->
     <script src="./js/main.js"></script>
     <script>
       $(function () {
@@ -530,7 +548,7 @@
         },
       });
     </script>
-
+    <!-- search -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const searchInput = document.querySelector(".search input");
@@ -554,51 +572,118 @@
 
     <!-- purple slider -->
     <script>
+      // function initSlider() {
+      //   const track = document.getElementById("sliderTrack");
+      //   const prevBtn = document.getElementById("prevBtn");
+      //   const nextBtn = document.getElementById("nextBtn");
+      //   const Box = document.getElementsByClassName("Box");
+      //   var totalItems = Box.length;
+      //   let currentSlide = 0;
+      //   let itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
+      //   var maxSlide;
+
+      //   function updateSlider() {
+      //     if (track.children.length === 0) return;
+      //     const slideWidth = track.children[0].offsetWidth + 20;
+      //     const moveX = slideWidth * itemsPerSlide * currentSlide;
+      //     track.style.transform = `translateX(-${moveX}px)`;
+      //   }
+      //   function MAX_Size(totalItems, itemsPerSlide) {
+      //     maxSlide = Math.max(
+      //       0,
+      //       Math.ceil((totalItems - itemsPerSlide) / itemsPerSlide)
+      //     );
+      //   }
+      //   function resetSlider() {
+      //     itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
+      //     MAX_Size(totalItems, itemsPerSlide);
+      //     if (currentSlide > maxSlide) currentSlide = maxSlide;
+      //     updateSlider();
+      //   }
+
+      //   nextBtn.addEventListener("click", () => {
+      //     if (currentSlide > 0) {
+      //       totalItems = Box.length;
+      //       MAX_Size(totalItems, itemsPerSlide);
+      //       currentSlide--;
+      //       updateSlider();
+      //     }
+      //   });
+
+      //   prevBtn.addEventListener("click", () => {
+      //     if (currentSlide < maxSlide) {
+      //       totalItems = Box.length;
+      //       MAX_Size(totalItems, itemsPerSlide);
+      //       currentSlide++;
+      //       updateSlider();
+      //     }
+      //   });
+
+      //   window.addEventListener("resize", () => {
+      //     resetSlider();
+      //   });
+
+      //   resetSlider();
+      // }
+
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   initSlider();
+      // });
+
       function initSlider() {
         const track = document.getElementById("sliderTrack");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
-        const Box = document.getElementsByClassName("Box");
-        var totalItems = Box.length;
+
         let currentSlide = 0;
         let itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
-        var maxSlide;
+        let maxSlide;
 
         function updateSlider() {
+          const Box = document.getElementsByClassName("Box");
+          if (track.children.length === 0) return;
           const slideWidth = track.children[0].offsetWidth + 20;
           const moveX = slideWidth * itemsPerSlide * currentSlide;
           track.style.transform = `translateX(-${moveX}px)`;
         }
+
         function MAX_Size(totalItems, itemsPerSlide) {
           maxSlide = Math.max(
             0,
             Math.ceil((totalItems - itemsPerSlide) / itemsPerSlide)
           );
         }
+
         function resetSlider() {
-          itemsPerSlide = window.innerWidth <= 700 ? 1 : 3;
+          itemsPerSlide = window.innerWidth <= 700 ? 1 : 1;
+          const Box = document.getElementsByClassName("Box");
+          const totalItems = Box.length;
           MAX_Size(totalItems, itemsPerSlide);
           if (currentSlide > maxSlide) currentSlide = maxSlide;
           updateSlider();
         }
 
-        nextBtn.addEventListener("click", () => {
-          if (currentSlide > 0) {
-            totalItems = Box.length;
+        if (nextBtn && prevBtn) {
+          nextBtn.addEventListener("click", () => {
+            const Box = document.getElementsByClassName("Box");
+            const totalItems = Box.length;
             MAX_Size(totalItems, itemsPerSlide);
-            currentSlide--;
-            updateSlider();
-          }
-        });
+            if (currentSlide > 0) {
+              currentSlide--;
+              updateSlider();
+            }
+          });
 
-        prevBtn.addEventListener("click", () => {
-          if (currentSlide < maxSlide) {
-            totalItems = Box.length;
+          prevBtn.addEventListener("click", () => {
+            const Box = document.getElementsByClassName("Box");
+            const totalItems = Box.length;
             MAX_Size(totalItems, itemsPerSlide);
-            currentSlide++;
-            updateSlider();
-          }
-        });
+            if (currentSlide < maxSlide) {
+              currentSlide++;
+              updateSlider();
+            }
+          });
+        }
 
         window.addEventListener("resize", () => {
           resetSlider();
@@ -611,6 +696,7 @@
         initSlider();
       });
     </script>
+    <!-- just number -->
     <script>
       const numberInput = document.getElementById("PhoneNum");
 
