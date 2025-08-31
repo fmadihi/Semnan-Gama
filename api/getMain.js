@@ -31,97 +31,98 @@ $(function () {
         slider_wrapper[0].getElementsByClassName("slider-container");
       let slider_track =
         slider_container[0].getElementsByClassName("slider-track");
-      depart.map((e)=>{
+      depart.map((e) => {
         data.map((elem) => {
-        if (elem.is_registering == true) {
-          if (elem.course_department == e.id) {
-          let div_Box = document.createElement("div");
-          div_Box.className = "Box slide";
-          let div_pic = document.createElement("div");
-          //create pic div
-          div_pic.className = "pic";
-          let img = document.createElement("img");
-          img.setAttribute("src", elem.course_picture);
-          div_pic.append(img);
-          div_Box.append(div_pic);
-          //create info div
-          let div_info = document.createElement("div");
-          div_info.className = "info";
-          let div_nameCourses = document.createElement("div");
-          div_nameCourses.className = "nameCourses";
-          let b = document.createElement("b");
-          b.innerHTML = elem.course_name + " ";
-          let span = document.createElement("span");
-          span.innerHTML = e.department_name + " ";
-          div_nameCourses.append(b);
-          div_nameCourses.append(span);
-          div_info.append(div_nameCourses);
-          div_startCourses = document.createElement("div");
-          div_startCourses.className = "startCourses";
+          if (elem.is_registering == true) {
+            if (elem.course_department == e.id) {
+              let div_Box = document.createElement("div");
+              div_Box.className = "Box slide";
+              let div_pic = document.createElement("div");
+              //create pic div
+              div_pic.className = "pic";
+              let img = document.createElement("img");
+              img.setAttribute("src", elem.course_picture);
+              div_pic.append(img);
+              div_Box.append(div_pic);
+              //create info div
+              let div_info = document.createElement("div");
+              div_info.className = "info";
+              let div_nameCourses = document.createElement("div");
+              div_nameCourses.className = "nameCourses";
+              let b = document.createElement("b");
+              b.innerHTML = elem.course_name + " ";
+              // let span = document.createElement("span");
+              // span.innerHTML = e.department_name + " ";
+              div_nameCourses.append(b);
+              // div_nameCourses.append(span);
+              div_info.append(div_nameCourses);
+              div_startCourses = document.createElement("div");
+              div_startCourses.className = "startCourses";
 
-          //chanjge date to fasi
-         function getPersianMonthName(dateStringSend) {
-    let dateStringSolit = dateStringSend.split('T')
-    let dateString = dateStringSolit[0]
+              //chanjge date to fasi
+              function getPersianMonthName(dateStringSend) {
+                let dateStringSolit = dateStringSend.split("T");
+                let dateString = dateStringSolit[0];
 
-    // تاریخ ورودی به فرمت "yyyy-mm-dd" (مثال: "1404-04-03")
-    const [year, month, day] = dateString.split("-");
+                // تاریخ ورودی به فرمت "yyyy-mm-dd" (مثال: "1404-04-03")
+                const [year, month, day] = dateString.split("-");
 
-    const months = [
-      "فروردین",
-      "اردیبهشت",
-      "خرداد",
-      "تیر",
-      "مرداد",
-      "شهریور",
-      "مهر",
-      "آبان",
-      "آذر",
-      "دی",
-      "بهمن",
-      "اسفند",
-    ];
+                const months = [
+                  "فروردین",
+                  "اردیبهشت",
+                  "خرداد",
+                  "تیر",
+                  "مرداد",
+                  "شهریور",
+                  "مهر",
+                  "آبان",
+                  "آذر",
+                  "دی",
+                  "بهمن",
+                  "اسفند",
+                ];
 
-    // تبدیل شماره ماه به نام ماه
-    const monthName = months[parseInt(month) - 1]; // ماه‌ها از 1 شروع می‌شوند
-    const valDate = day + " " + monthName + " " + year;
-    return valDate;
-  }
-  // استفاده از تابع
-  const courseStartDate = elem.course_start_date; // تاریخ شمسی
+                // تبدیل شماره ماه به نام ماه
+                const monthName = months[parseInt(month) - 1]; // ماه‌ها از 1 شروع می‌شوند
+                const valDate = day + " " + monthName + " " + year;
+                return valDate;
+              }
+              // استفاده از تابع
+              const courseStartDate = elem.course_start_date; // تاریخ شمسی
 
-  const formattedDate = getPersianMonthName(courseStartDate);
+              const formattedDate = getPersianMonthName(courseStartDate);
 
+              div_startCourses.innerHTML = "شروع دوره: " + formattedDate;
 
-            div_startCourses.innerHTML = "شروع دوره: " + formattedDate;
+              div_nameCourses.append(div_startCourses);
 
-          div_nameCourses.append(div_startCourses);
+              //create btn
+              let div_btnCourses = document.createElement("div");
+              div_btnCourses.className = "btnCoueses";
+              let div = document.createElement("div");
+              let a = document.createElement("a");
+              a.innerHTML = "مشاهده اطلاعات";
+              let btn_img = document.createElement("img");
+              btn_img.setAttribute("src", "../image/courses/arrow-left 1.svg");
 
-          //create btn
-          let div_btnCourses = document.createElement("div");
-          div_btnCourses.className = "btnCoueses";
-          let div = document.createElement("div");
-          let a = document.createElement("a");
-          a.innerHTML = "مشاهده اطلاعات";
-          let btn_img = document.createElement("img");
-          btn_img.setAttribute("src", "../image/courses/arrow-left 1.svg");
+              div.append(a);
+              div.append(btn_img);
+              div_btnCourses.append(div);
+              // div_info.append(div_btnCourses);
+            div_Box.append(div_info);
 
-          div.append(a);
-          div.append(btn_img);
-          div_btnCourses.append(div);
-          div_info.append(div_btnCourses);
+              div_Box.append(div_btnCourses);
 
-          div_Box.append(div_info);
+              slider_track[0].append(div_Box);
 
-          slider_track[0].append(div_Box);
-
-          div_btnCourses.addEventListener("click", function () {
-           localStorage.setItem("selectedCourse", JSON.stringify(elem)); // ذخیره اطلاعات کامل دوره
-              window.location.href = "./htm/lessen.html"; // رفتن به صفحه درس
-          });
-        }
-      }});
-      })
+              div_btnCourses.addEventListener("click", function () {
+                localStorage.setItem("selectedCourse", JSON.stringify(elem)); // ذخیره اطلاعات کامل دوره
+                window.location.href = "./htm/lessen.html"; // رفتن به صفحه درس
+              });
+            }
+          }
+        });
+      });
 
       let isregister = document.getElementById("isregister");
       let div_slider = isregister.getElementsByClassName("slider");
@@ -166,7 +167,7 @@ $(function () {
 
           divin.addEventListener("click", function () {
             localStorage.setItem("selectedCourse", JSON.stringify(elem)); // ذخیره اطلاعات کامل دوره
-              window.location.href = "./htm/lessen.html"; // رفتن به صفحه درس
+            window.location.href = "./htm/lessen.html"; // رفتن به صفحه درس
           });
         }
       });
@@ -208,6 +209,4 @@ $(function () {
     await fetchCourses();
   }
   getdata();
-
-  
 });

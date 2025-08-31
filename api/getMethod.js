@@ -64,10 +64,10 @@ $(function () {
             div_nameCourses.className = "nameCourses";
             let b = document.createElement("b");
             b.innerHTML = elem.course_name + " ";
-            let span = document.createElement("span");
-            span.innerHTML = e.department_name + " ";
+            // let span = document.createElement("span");
+            // span.innerHTML = e.department_name + " ";
             div_nameCourses.append(b);
-            div_nameCourses.append(span);
+            // div_nameCourses.append(span);
             div_info.append(div_nameCourses);
             let div_startCourses = document.createElement("div");
             div_startCourses.className = "startCourses";
@@ -75,36 +75,35 @@ $(function () {
             //chanjge date to date and time
 
             function getPersianMonthName(dateStringSend) {
-    let dateStringSolit = dateStringSend.split('T')
-    let dateString = dateStringSolit[0]
+              let dateStringSolit = dateStringSend.split("T");
+              let dateString = dateStringSolit[0];
 
-    const [year, month, day] = dateString.split("-");
+              const [year, month, day] = dateString.split("-");
 
-    const months = [
-      "فروردین",
-      "اردیبهشت",
-      "خرداد",
-      "تیر",
-      "مرداد",
-      "شهریور",
-      "مهر",
-      "آبان",
-      "آذر",
-      "دی",
-      "بهمن",
-      "اسفند",
-    ];
+              const months = [
+                "فروردین",
+                "اردیبهشت",
+                "خرداد",
+                "تیر",
+                "مرداد",
+                "شهریور",
+                "مهر",
+                "آبان",
+                "آذر",
+                "دی",
+                "بهمن",
+                "اسفند",
+              ];
 
-    // تبدیل شماره ماه به نام ماه
-    const monthName = months[parseInt(month) - 1]; // ماه‌ها از 1 شروع می‌شوند
-    const valDate = day + " " + monthName + " " + year;
-    return valDate;
-  }
-  // استفاده از تابع
-  const courseStartDate = elem.course_start_date; // تاریخ شمسی
+              // تبدیل شماره ماه به نام ماه
+              const monthName = months[parseInt(month) - 1]; // ماه‌ها از 1 شروع می‌شوند
+              const valDate = day + " " + monthName + " " + year;
+              return valDate;
+            }
+            // استفاده از تابع
+            const courseStartDate = elem.course_start_date; // تاریخ شمسی
 
-  const formattedDate = getPersianMonthName(courseStartDate);
-
+            const formattedDate = getPersianMonthName(courseStartDate);
 
             div_startCourses.innerHTML = "شروع دوره: " + formattedDate;
 
@@ -122,9 +121,10 @@ $(function () {
             div.append(a);
             div.append(btn_img);
             div_btnCourses.append(div);
-            div_info.append(div_btnCourses);
+            // div_info.append(div_btnCourses);
 
             div_Box.append(div_info);
+            div_Box.append(div_btnCourses);
 
             div_dep[0].append(div_Box);
 
@@ -139,106 +139,219 @@ $(function () {
       // console.log(error.message);
     }
   }
+  // let searchTxt;
+  // async function serachData() {
+  //   //search code
+  //   setTimeout(() => {
+  //     const searchInput = document.getElementById("searchInput");
+  //     const courseBoxes = document.querySelectorAll(".Box");
+  //     const partOneTitles = document.querySelectorAll(".partOneTitle");
+
+  //     let getTXt = JSON.parse(localStorage.getItem("SearchText"));
+  //     if (getTXt) {
+  //       searchTxt = getTXt.toLowerCase();
+  //     }
+  //     if (searchTxt) {
+  //       if (searchTxt.trim() !== "") {
+  //         partOneTitles.forEach((title) => {
+  //           title.style.display = "none";
+  //         });
+  //       } else {
+  //         partOneTitles.forEach((title) => {
+  //           title.style.display = "block";
+  //         });
+  //       }
+  //       const offsetTop =
+  //         searchInput.getBoundingClientRect().top + window.pageYOffset;
+  //       window.scrollTo({
+  //         top: offsetTop - 50, // فاصله 100px از بالا
+  //         behavior: "smooth",
+  //       });
+  //       courseBoxes.forEach((box) => {
+  //         const courseTitle = box
+  //           .querySelector(".nameCourses b")
+  //           .innerText.toLowerCase();
+  //         // const courseCategory = box
+  //         //   .querySelector(".nameCourses span")
+  //         //   .innerText.toLowerCase();
+  //         const departTitle = document.querySelectorAll(".partOneTitle");
+  //         if (
+  //           courseTitle.includes(searchTxt) ||
+  //           departTitle.includes(searchTxt)
+  //           // courseCategory.includes(searchTxt)
+  //         ) {
+  //           box.style.display = "flex";
+  //         } else {
+  //           box.style.display = "none";
+  //         }
+  //       });
+  //     }
+
+  //     localStorage.removeItem("SearchText");
+  //     getTXt = JSON.parse(localStorage.getItem("SearchText"));
+
+  //     searchTxt = "";
+  //   }, 500);
+  // }
+
   let searchTxt;
-  async function serachData() {
-    //search code
-    setTimeout(() => {
-      const searchInput = document.getElementById("searchInput");
-      const courseBoxes = document.querySelectorAll(".Box");
-      const partOneTitles = document.querySelectorAll(".partOneTitle");
 
-      let getTXt = JSON.parse(localStorage.getItem("SearchText"));
-      if (getTXt) {
-        searchTxt = getTXt.toLowerCase();
+async function serachData() {
+  setTimeout(() => {
+    const searchInput = document.getElementById("searchInput");
+    const courseBoxes = document.querySelectorAll(".Box");
+    const partOneTitles = document.querySelectorAll(".partOneTitle");
+
+    let getTxt = JSON.parse(localStorage.getItem("SearchText"));
+    if (getTxt) {
+      searchTxt = getTxt.toLowerCase().trim();
+    }
+
+    if (searchTxt) {
+      // نمایش یا پنهان کردن تیتر دپارتمان‌ها
+      if (searchTxt !== "") {
+        partOneTitles.forEach((title) => {
+          title.style.display = "none";
+        });
+      } else {
+        partOneTitles.forEach((title) => {
+          title.style.display = "block";
+        });
       }
-      if (searchTxt) {
-        if (searchTxt.trim() !== "") {
-          partOneTitles.forEach((title) => {
-            title.style.display = "none";
-          });
+
+      // اسکرول به سرچ
+      const offsetTop =
+        searchInput.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: offsetTop - 50,
+        behavior: "smooth",
+      });
+
+      // فیلتر بر اساس عنوان دوره و دپارتمان
+      courseBoxes.forEach((box) => {
+        const courseTitle = box
+          .querySelector(".nameCourses b")
+          ?.innerText.toLowerCase();
+
+        const departmentTitle = box
+          .closest(".partOne")
+          ?.querySelector(".partOneTitle")
+          ?.innerText.toLowerCase();
+
+        const matchCourse = courseTitle?.includes(searchTxt);
+        const matchDept = departmentTitle?.includes(searchTxt);
+
+        if (matchCourse || matchDept) {
+          box.style.display = "flex";
         } else {
-          partOneTitles.forEach((title) => {
-            title.style.display = "block";
-          });
+          box.style.display = "none";
         }
-        const offsetTop =
-          searchInput.getBoundingClientRect().top + window.pageYOffset;
-        window.scrollTo({
-          top: offsetTop - 50, // فاصله 100px از بالا
-          behavior: "smooth",
-        });
-        courseBoxes.forEach((box) => {
-          const courseTitle = box
-            .querySelector(".nameCourses b")
-            .innerText.toLowerCase();
-          const courseCategory = box
-            .querySelector(".nameCourses span")
-            .innerText.toLowerCase();
+      });
+    }
 
-          if (
-            courseTitle.includes(searchTxt) ||
-            courseCategory.includes(searchTxt)
-          ) {
-            box.style.display = "flex";
-          } else {
-            box.style.display = "none";
-          }
-        });
-      }
-
-      localStorage.removeItem("SearchText");
-      getTXt = JSON.parse(localStorage.getItem("SearchText"));
-
-      searchTxt = "";
-    }, 500);
-  }
+    localStorage.removeItem("SearchText");
+    searchTxt = "";
+  }, 500);
+}
 
   $("#searchInput").on("click", function () {
     // location.reload()
   });
 
-  searchInput.addEventListener("keyup", function () {
-    const courseBoxes01 = document.querySelectorAll(".Box");
-    const partOneTitles01 = document.querySelectorAll(".partOneTitle");
-    const offsetTop =
-      searchInput.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({
-      top: offsetTop - 50, // فاصله 100px از بالا
-      behavior: "smooth",
-    });
+  // searchInput.addEventListener("keyup", function () {
+  //   const courseBoxes01 = document.querySelectorAll(".Box");
+  //   const partOneTitles01 = document.querySelectorAll(".partOneTitle");
+  //   const offsetTop =
+  //     searchInput.getBoundingClientRect().top + window.pageYOffset;
+  //   window.scrollTo({
+  //     top: offsetTop - 50, // فاصله 100px از بالا
+  //     behavior: "smooth",
+  //   });
 
-    const searchValue = this.value.toLowerCase();
-    // اگر چیزی توی سرچ وارد شده بود، عنوان‌ها مخفی بشن
-    if (searchInput.value.trim() !== "") {
-      partOneTitles01.forEach((title) => {
-        title.style.display = "none";
-      });
-    } else {
-      partOneTitles01.forEach((title) => {
-        title.style.display = "block";
-      });
-    }
+  //   const searchValue = this.value.toLowerCase();
+  //   // اگر چیزی توی سرچ وارد شده بود، عنوان‌ها مخفی بشن
+  //   if (searchInput.value.trim() !== "") {
+  //     partOneTitles01.forEach((title) => {
+  //       title.style.display = "none";
+  //     });
+  //   } else {
+  //     partOneTitles01.forEach((title) => {
+  //       title.style.display = "block";
+  //     });
+  //   }
 
-    courseBoxes01.forEach((box) => {
-      const courseTitle = box
-        .querySelector(".nameCourses b")
-        .innerText.toLowerCase();
-      const courseCategory = box
-        .querySelector(".nameCourses span")
-        .innerText.toLowerCase();
-
-      if (
-        courseTitle.includes(searchValue) ||
-        courseCategory.includes(searchValue)
-      ) {
-        box.style.display = "flex";
-      } else {
-        box.style.display = "none";
-      }
-    });
-  });
+  //   courseBoxes01.forEach((box) => {
+  //     const courseTitle = box
+  //       .querySelector(".nameCourses b")
+  //       .innerText.toLowerCase();
+  //     // const courseCategory = box
+  //     //   .querySelector(".nameCourses span")
+  //     //   .innerText.toLowerCase();
+  //     const departTitle = document
+  //       .querySelector(".partOneTitle")
+  //       .innerText.toLowerCase();
+  //     console.log("11", departTitle,departTitle.includes(searchTxt));
+  //     if (
+  //       courseTitle.includes(searchValue) ||
+  //       departTitle.includes(searchTxt)
+  //       // courseCategory.includes(searchValue)
+  //     ) {
+  //       box.style.display = "flex";
+  //     } else {
+  //       box.style.display = "none";
+  //     }
+  //   });
+  // });
 
   //hover category
+  searchInput.addEventListener("keyup", function () {
+  const courseBoxes = document.querySelectorAll(".Box");
+  const partOneTitles = document.querySelectorAll(".partOneTitle");
+
+  const searchValue = this.value.toLowerCase().trim();
+
+  const offsetTop =
+    searchInput.getBoundingClientRect().top + window.pageYOffset;
+  window.scrollTo({
+    top: offsetTop - 50,
+    behavior: "smooth",
+  });
+
+  // نمایش یا عدم نمایش عناوین دپارتمان‌ها
+  if (searchValue !== "") {
+    partOneTitles.forEach((title) => {
+      title.style.display = "none";
+    });
+  } else {
+    partOneTitles.forEach((title) => {
+      title.style.display = "block";
+    });
+  }
+
+  courseBoxes.forEach((box) => {
+    const courseTitle = box
+      .querySelector(".nameCourses b")
+      ?.innerText.toLowerCase();
+
+    const departmentTitle = box
+      .closest(".partOne")
+      ?.querySelector(".partOneTitle")
+      ?.innerText.toLowerCase();
+
+    const matchCourse = courseTitle && courseTitle.includes(searchValue);
+    const matchDept = departmentTitle && departmentTitle.includes(searchValue);
+
+    if (matchCourse || matchDept) {
+      box.style.display = "flex";
+    } else {
+      box.style.display = "none";
+    }
+  });
+});
+
+  
+  
+  
   const imgs = document.querySelectorAll(".itemCategory img");
 
   imgs.forEach((img) => {

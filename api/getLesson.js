@@ -113,6 +113,7 @@ $(function () {
           let seseanOneExam = document.createElement("div");
           seseanOneExam.classList = "seseanOneExam";
           seseanOneExam.innerHTML = `آزمون فصل ${index + 1}`;
+          seseanOneExam.style.visibility="hidden"
           seasonPartOne.append(seseanOneExam);
 
           courses_season[0].append(seasonPartOne);
