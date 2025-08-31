@@ -17,7 +17,38 @@
   src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff");
   src: url("../fonts/vazir-font-v16.1.0/Vazir-Medium.woff2");
 }
+html {
+  scroll-behavior: smooth;
+}
+.btn-register {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #28a745, #218838); /* گرادیان سبز */
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(33, 136, 56, 0.4); /* سایه سبز */
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 9;
+}
 
+.btn-register:hover {
+    background: linear-gradient(135deg, #218838, #28a745);
+    box-shadow: 0 6px 20px rgba(33, 136, 56, 0.6);
+    transform: translateY(-3px);
+}
+
+.btn-register:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(33, 136, 56, 0.4);
+}
 .nav_item:hover {
   border-top: 1px solid #000000;
   padding-top: 5px;
